@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<properties>
+  <features><feature name="Contacts" value="io.dcloud.feature.contacts.ContactsFeatureImpl"/>
+<feature name="Console" value="io.dcloud.feature.pdr.LoggerFeatureImpl"/>
+<feature name="Device" value="io.dcloud.feature.device.DeviceFeatureImpl"/>
+<feature name="File" value="io.dcloud.js.file.FileFeatureImpl"/>
+<feature name="Proximity" value="io.dcloud.feature.sensor.ProximityFeatureImpl"/>
+<feature name="Storage" value="io.dcloud.feature.pdr.NStorageFeatureImpl"/>
+<feature name="Cache" value="io.dcloud.feature.pdr.CoreCacheFeatureImpl"/>
+<feature name="Invocation" value="io.dcloud.invocation.Invocation"/>
+<feature name="Navigator" value="io.dcloud.feature.ui.navigator.NavigatorUIFeatureImpl"/>
+<feature name="NativeUI" value="io.dcloud.feature.ui.nativeui.NativeUIFeatureImpl"/>
+<feature name="UI" value="io.dcloud.feature.ui.UIFeatureImpl"><module name="Navigator" value="io.dcloud.feature.ui.NavView"/></feature>
+<feature name="Gallery" value="io.dcloud.js.gallery.GalleryFeatureImpl"/>
+<feature name="Downloader" value="io.dcloud.net.DownloaderFeatureImpl"/>
+<feature name="Uploader" value="io.dcloud.net.UploadFeature"/>
+<feature name="Audio" value="io.dcloud.feature.audio.AudioFeatureImpl"/>
+<feature name="Runtime" value="io.dcloud.feature.pdr.RuntimeFeatureImpl"/>
+<feature name="XMLHttpRequest" value="io.dcloud.net.XMLHttpRequestFeature"/>
+<feature name="Accelerometer" value="io.dcloud.feature.sensor.AccelerometerFeatureImpl"/>
+<feature name="Orientation" value="io.dcloud.feature.sensor.OrientationFeatureImpl"/>
+<feature name="NativeObj" value="io.dcloud.feature.nativeObj.FeatureImpl"/>
+<feature name="Geolocation" value="io.dcloud.js.geolocation.GeolocationFeatureImpl"/>
+<feature name="Stream" value="io.dcloud.appstream.js.StreamAppFeatureImpl"/>
+<feature name="Zip" value="io.dcloud.feature.pdr.ZipFeature"/>
+<feature name="Bluetooth" value="io.dcloud.feature.bluetooth.BluetoothFeature"/>
+<feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl"/>
+<feature name="Share" value="io.dcloud.share.ShareFeatureImpl"/>
+<feature name="VideoPlayer" value="io.dcloud.media.MediaFeatureImpl"/>
+<feature name="Sqlite" value="io.dcloud.feature.sqlite.DataBaseFeature"/>
+<feature name="Camera" value="io.dcloud.js.camera.CameraFeatureImpl"/>
+<feature name="Barcode" value="io.dcloud.feature.barcode2.BarcodeFeatureImpl"/>
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"/>
+<feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl"/>
+<feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+<module name="gdt" value="io.dcloud.feature.ad.gdt.ADGdtModule"/>
+</feature>
+<feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+<module name="gm" value="io.dcloud.feature.ad.csj.ADCsjModule"/>
+</feature>
+<feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+<module name="ks" value="io.dcloud.feature.ad.ks.ADKsModule"/>
+</feature>
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
+<module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/>
+</feature>
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="Payment-Paypal" value="io.dcloud.feature.payment.paypal.PaypalPay" /></feature>
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
+<module name="Payment-Weixin" value="io.dcloud.feature.payment.weixin.WeiXinPay"/>
+</feature>
+<feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl">
+<module name="unipush" value="io.dcloud.feature.unipush.GTPushService"/>
+</feature>
+<feature name="Share" value="io.dcloud.share.ShareFeatureImpl">
+<module name="Weixin" value="io.dcloud.share.mm.WeiXinApiManager"/>
+</feature></features>
+  <services><service name="push" value="io.dcloud.feature.aps.APSFeatureImpl"/></services>
+</properties>

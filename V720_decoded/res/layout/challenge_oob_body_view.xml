@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/textbody" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/text_info_body_view" />
+    <com.cardinalcommerce.a.setBottom android:theme="@style/otpbody.verfyBtn" android:id="@id/submitAuthenticationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" android:text="@string/continueText" android:textAllCaps="false" android:layout_marginStart="@dimen/fab_margin" android:layout_marginEnd="@dimen/fab_margin" />
+</LinearLayout>

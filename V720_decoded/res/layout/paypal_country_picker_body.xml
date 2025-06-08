@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/paypal_checkout_padding_16x" android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText android:id="@id/country_search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/paypal_checkout_select_country" app:layout_constraintBottom_toTopOf="@id/country_picker_recycler_view" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/country_picker_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/country_search_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

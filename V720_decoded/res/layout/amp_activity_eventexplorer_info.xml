@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/amp_light_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/amp_banner" />
+        <ImageView android:layout_gravity="end|center" android:id="@id/amp_eeInfo_iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/amp_cancel" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/amp_dark_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:text="@string/amp_label_user_info" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/amp_dark_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amp_label_device_id" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/amp_gray" android:id="@id/amp_eeInfo_tv_deviceId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/amp_label_not_avail" android:singleLine="true" android:layout_toLeftOf="@id/amp_eeInfo_btn_copyDeviceId" android:layout_alignParentBottom="true" />
+            <Button android:textColor="@color/amp_blue" android:gravity="center" android:id="@id/amp_eeInfo_btn_copyDeviceId" android:background="@drawable/amp_button_bg" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="19.0dip" android:text="@string/amp_label_copy" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="16.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/amp_dark_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amp_label_user_id" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/amp_gray" android:id="@id/amp_eeInfo_tv_userId" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/amp_label_not_avail" android:singleLine="true" android:layout_toLeftOf="@id/amp_eeInfo_btn_copyUserId" android:layout_alignParentBottom="true" />
+            <Button android:textColor="@color/amp_blue" android:gravity="center" android:id="@id/amp_eeInfo_btn_copyUserId" android:background="@drawable/amp_button_bg" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="19.0dip" android:text="@string/amp_label_copy" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

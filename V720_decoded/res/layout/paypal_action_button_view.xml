@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/buttonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" style="@style/PYPLTextViewButtonStyle" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/middleVerticalGuideline" android:layout_width="@dimen/paypal_checkout_match_constraint" android:layout_height="@dimen/paypal_checkout_match_constraint" app:layout_constraintGuide_percent="0.5" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/middleHorizontalGuideline" android:layout_width="@dimen/paypal_checkout_match_constraint" android:layout_height="@dimen/paypal_checkout_match_constraint" app:layout_constraintGuide_percent="0.5" />
+</merge>

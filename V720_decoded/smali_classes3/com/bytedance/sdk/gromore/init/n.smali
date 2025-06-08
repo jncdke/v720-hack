@@ -1,0 +1,77 @@
+.class public Lcom/bytedance/sdk/gromore/init/n;
+.super Lcom/bytedance/sdk/openadsdk/mediation/b/c/c/b;
+
+
+# instance fields
+.field private b:Lcom/bytedance/msdk/core/admanager/dj;
+
+
+# direct methods
+.method public constructor <init>(Lcom/bytedance/msdk/core/admanager/dj;)V
+    .locals 0
+
+    .line 22
+    invoke-direct {p0}, Lcom/bytedance/sdk/openadsdk/mediation/b/c/c/b;-><init>()V
+
+    .line 23
+    iput-object p1, p0, Lcom/bytedance/sdk/gromore/init/n;->b:Lcom/bytedance/msdk/core/admanager/dj;
+
+    return-void
+.end method
+
+.method static synthetic b(Lcom/bytedance/sdk/gromore/init/n;)Lcom/bytedance/msdk/core/admanager/dj;
+    .locals 0
+
+    .line 18
+    iget-object p0, p0, Lcom/bytedance/sdk/gromore/init/n;->b:Lcom/bytedance/msdk/core/admanager/dj;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public b(Ljava/lang/String;Lcom/bytedance/sdk/openadsdk/jp/b/c/b/c;)V
+    .locals 0
+
+    .line 28
+    invoke-virtual {p0, p1, p2}, Lcom/bytedance/sdk/gromore/init/n;->c(Ljava/lang/String;Lcom/bytedance/sdk/openadsdk/jp/b/c/b/c;)V
+
+    return-void
+.end method
+
+.method public c(Ljava/lang/String;Lcom/bytedance/sdk/openadsdk/jp/b/c/b/c;)V
+    .locals 2
+
+    .line 32
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/bytedance/sdk/gromore/init/n;->b:Lcom/bytedance/msdk/core/admanager/dj;
+
+    if-eqz v0, :cond_0
+
+    if-eqz p2, :cond_0
+
+    .line 33
+    new-instance v1, Lcom/bytedance/sdk/gromore/init/n$1;
+
+    invoke-direct {v1, p0, p2}, Lcom/bytedance/sdk/gromore/init/n$1;-><init>(Lcom/bytedance/sdk/gromore/init/n;Lcom/bytedance/sdk/openadsdk/jp/b/c/b/c;)V
+
+    invoke-virtual {v0, p1, v1}, Lcom/bytedance/msdk/core/admanager/dj;->b(Ljava/lang/String;Lcom/bytedance/msdk/api/im/b/g/g;)V
+
+    goto :goto_0
+
+    .line 57
+    :cond_0
+    const-string p1, "TMe"
+
+    const-string p2, "adm \u53c2\u6570\u9519\u8bef \u6216\u8005 drawTokenInfo is null"
+
+    invoke-static {p1, p2}, Lcom/bytedance/msdk/b/dj/g;->im(Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_0
+    return-void
+.end method

@@ -1,0 +1,365 @@
+.class Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;
+.super Ljava/lang/Object;
+.source "NaxMediaRecordModule.java"
+
+# interfaces
+.implements Lcom/naxclow/rtc/INaxclowPlaybackListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/naxclow/uniplugin/NaxMediaRecordModule;->setDeviceMessageCallback(Lcom/alibaba/fastjson/JSONObject;Lio/dcloud/feature/uniapp/bridge/UniJSCallback;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# static fields
+.field static final synthetic $assertionsDisabled:Z
+
+
+# instance fields
+.field final synthetic this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+.field final synthetic val$jsCallback:Lio/dcloud/feature/uniapp/bridge/UniJSCallback;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 58
+    const-class v0, Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    return-void
+.end method
+
+.method constructor <init>(Lcom/naxclow/uniplugin/NaxMediaRecordModule;Lio/dcloud/feature/uniapp/bridge/UniJSCallback;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            null,
+            null
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 58
+    iput-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    iput-object p2, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->val$jsCallback:Lio/dcloud/feature/uniapp/bridge/UniJSCallback;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onDevicePlaybackError(I)V
+    .locals 2
+
+    .line 61
+    new-instance v0, Lcom/alibaba/fastjson/JSONObject;
+
+    invoke-direct {v0}, Lcom/alibaba/fastjson/JSONObject;-><init>()V
+
+    .line 62
+    const-string v1, "error"
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {v0, v1, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x4e21
+
+    .line 63
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string v1, "method"
+
+    invoke-virtual {v0, v1, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 64
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->val$jsCallback:Lio/dcloud/feature/uniapp/bridge/UniJSCallback;
+
+    if-eqz p1, :cond_0
+
+    .line 65
+    invoke-interface {p1, v0}, Lio/dcloud/feature/uniapp/bridge/UniJSCallback;->invokeAndKeepAlive(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onDevicePlaybackFileNameList(Ljava/lang/String;Ljava/util/List;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 71
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v1, "\u6536\u5230\u6587\u4ef6\u540d\u5217\u8868 \u65e5\u671f\uff1a"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "jsLog"
+
+    invoke-static {v1, v0}, Lio/dcloud/feature/uniapp/utils/UniLogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 72
+    new-instance v0, Lcom/alibaba/fastjson/JSONObject;
+
+    invoke-direct {v0}, Lcom/alibaba/fastjson/JSONObject;-><init>()V
+
+    .line 73
+    const-string v1, "date"
+
+    invoke-virtual {v0, v1, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    const-string p1, "list"
+
+    invoke-virtual {v0, p1, p2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x4e22
+
+    .line 75
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string p2, "method"
+
+    invoke-virtual {v0, p2, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 76
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->val$jsCallback:Lio/dcloud/feature/uniapp/bridge/UniJSCallback;
+
+    if-eqz p1, :cond_0
+
+    .line 77
+    invoke-interface {p1, v0}, Lio/dcloud/feature/uniapp/bridge/UniJSCallback;->invokeAndKeepAlive(Ljava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onDevicePlaybackMediaStreamData(Ljava/lang/String;[BS)V
+    .locals 2
+
+    if-eqz p2, :cond_1
+
+    .line 85
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    invoke-static {p1}, Lcom/naxclow/uniplugin/NaxMediaRecordModule;->access$000(Lcom/naxclow/uniplugin/NaxMediaRecordModule;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 86
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    invoke-static {p1}, Lcom/naxclow/uniplugin/NaxMediaRecordModule;->access$100(Lcom/naxclow/uniplugin/NaxMediaRecordModule;)S
+
+    move-result p1
+
+    const/4 v0, -0x1
+
+    if-eq v0, p1, :cond_0
+
+    .line 87
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    invoke-static {p1}, Lcom/naxclow/uniplugin/NaxMediaRecordModule;->access$100(Lcom/naxclow/uniplugin/NaxMediaRecordModule;)S
+
+    move-result p1
+
+    if-eq p3, p1, :cond_0
+
+    .line 88
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object p1
+
+    .line 90
+    invoke-static {p3}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
+
+    move-result-object p2
+
+    iget-object p3, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->this$0:Lcom/naxclow/uniplugin/NaxMediaRecordModule;
+
+    invoke-static {p3}, Lcom/naxclow/uniplugin/NaxMediaRecordModule;->access$100(Lcom/naxclow/uniplugin/NaxMediaRecordModule;)S
+
+    move-result p3
+
+    invoke-static {p3}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
+
+    move-result-object p3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aput-object p2, v0, v1
+
+    const/4 p2, 0x1
+
+    aput-object p3, v0, p2
+
+    .line 88
+    const-string/jumbo p2, "\u56de\u653e\u6d41\u6570\u636e:\u8bbe\u5907fileSeq[%d]\u4e0e\u5ba2\u6237\u7aeffileSeq[%d]\u4e0d\u5339\u914d"
+
+    invoke-static {p1, p2, v0}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 91
+    const-string p2, "jsLog"
+
+    invoke-static {p2, p1}, Lio/dcloud/feature/uniapp/utils/UniLogUtils;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    .line 97
+    :cond_0
+    invoke-static {}, Lcom/naxclow/media/NaxPlayer;->getInstance()Lcom/naxclow/media/NaxPlayer;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lcom/naxclow/media/NaxPlayer;->writeAviRecordData([B)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public onDevicePlaybackMessage(Ljava/util/Map;Ljava/lang/String;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .line 103
+    new-instance v0, Lcom/alibaba/fastjson/JSONObject;
+
+    invoke-direct {v0, p1}, Lcom/alibaba/fastjson/JSONObject;-><init>(Ljava/util/Map;)V
+
+    .line 104
+    const-string v1, "dates"
+
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 105
+    new-instance v2, Lcom/alibaba/fastjson/JSONArray;
+
+    invoke-direct {v2}, Lcom/alibaba/fastjson/JSONArray;-><init>()V
+
+    .line 106
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lorg/json/JSONArray;
+
+    const/4 v3, 0x0
+
+    .line 108
+    :goto_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_0
+
+    .line 109
+    invoke-virtual {p1, v3}, Lorg/json/JSONArray;->opt(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Integer;
+
+    .line 110
+    invoke-virtual {v2, v4}, Lcom/alibaba/fastjson/JSONArray;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    .line 112
+    :cond_0
+    invoke-virtual {v0, v1, v2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 114
+    :cond_1
+    const-string p1, "devId"
+
+    invoke-virtual {v0, p1, p2}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/16 p1, 0x4e23
+
+    .line 115
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    const-string p2, "method"
+
+    invoke-virtual {v0, p2, p1}, Lcom/alibaba/fastjson/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 116
+    iget-object p1, p0, Lcom/naxclow/uniplugin/NaxMediaRecordModule$1;->val$jsCallback:Lio/dcloud/feature/uniapp/bridge/UniJSCallback;
+
+    if-eqz p1, :cond_2
+
+    .line 117
+    invoke-interface {p1, v0}, Lio/dcloud/feature/uniapp/bridge/UniJSCallback;->invokeAndKeepAlive(Ljava/lang/Object;)V
+
+    :cond_2
+    return-void
+.end method

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emui_color_gray_1">#fff2f2f2</color>
+    <color name="emui_color_gray_10">#ff191919</color>
+    <color name="emui_color_gray_7">#ff808080</color>
+    <color name="upsdk_blue_text_007dff">#ff007dff</color>
+    <color name="upsdk_category_button_select_pressed">#ff0076f2</color>
+    <color name="upsdk_white">#ffffffff</color>
+</resources>

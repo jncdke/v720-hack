@@ -1,0 +1,195 @@
+.class public Lcom/meizu/cloud/pushsdk/util/c;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static final a:Ljava/nio/charset/Charset;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "UTF-8"
+
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/meizu/cloud/pushsdk/util/c;->a:Ljava/nio/charset/Charset;
+
+    return-void
+.end method
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    if-eqz p0, :cond_0
+
+    :try_start_0
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {p1}, Lcom/meizu/cloud/pushsdk/util/c;->a(Ljava/lang/String;)[B
+
+    move-result-object p1
+
+    invoke-static {p0}, Lcom/meizu/cloud/pushsdk/util/c;->b(Ljava/lang/String;)Ljava/security/interfaces/RSAPublicKey;
+
+    move-result-object p0
+
+    new-instance v0, Ljava/lang/String;
+
+    invoke-static {p0, p1}, Lcom/meizu/cloud/pushsdk/util/c;->a(Ljava/security/PublicKey;[B)[B
+
+    move-result-object p0
+
+    sget-object p1, Lcom/meizu/cloud/pushsdk/util/c;->a:Ljava/nio/charset/Charset;
+
+    invoke-direct {v0, p0, p1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v0, "decrypt "
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "RSAUtils"
+
+    invoke-static {p1, p0}, Lcom/meizu/cloud/pushinternal/DebugLogger;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method private static a(Ljava/lang/String;)[B
+    .locals 0
+
+    invoke-static {p0}, Lcom/meizu/cloud/pushsdk/e/h/a;->a(Ljava/lang/String;)[B
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static a(Ljava/security/PublicKey;[B)[B
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    const-string v0, "RSA/ECB/PKCS1Padding"
+
+    invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-virtual {v0, v1, p0}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+
+    invoke-virtual {v0, p1}, Ljavax/crypto/Cipher;->doFinal([B)[B
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static b(Ljava/lang/String;)Ljava/security/interfaces/RSAPublicKey;
+    .locals 3
+
+    const-string v0, "RSAUtils"
+
+    :try_start_0
+    invoke-static {p0}, Lcom/meizu/cloud/pushsdk/util/c;->a(Ljava/lang/String;)[B
+
+    move-result-object p0
+
+    const-string v1, "RSA"
+
+    invoke-static {v1}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/security/spec/X509EncodedKeySpec;
+
+    invoke-direct {v2, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
+
+    invoke-virtual {v1, v2}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/security/interfaces/RSAPublicKey;
+    :try_end_0
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "loadPublicKey InvalidKeySpecException "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/security/spec/InvalidKeySpecException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "loadPublicKey NoSuchAlgorithmException "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/security/NoSuchAlgorithmException;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Lcom/meizu/cloud/pushinternal/DebugLogger;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    :goto_1
+    return-object p0
+.end method

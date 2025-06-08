@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bottom_sheet_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/homeBgdMaskLayout" android:background="@color/paypal_checkout_background_scrim_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" app:layout_anchorGravity="top">
+        <com.paypal.pyplcheckout.ui.feature.home.customviews.alertview.PayPalAlertToastView android:id="@id/toast_alert_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_margin_16x" android:alpha="0.0" android:layout_marginStart="@dimen/paypal_checkout_margin_16x" android:layout_marginEnd="@dimen/paypal_checkout_margin_16x" android:elevation="@dimen/paypal_checkout_margin_8x" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="@dimen/paypal_checkout_margin_8x" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/paymentButtonContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.paypal.checkout.paymentbutton.PayPalButton android:id="@id/payPalButton" android:tag="PayPal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:payment_button_shape="rectangle" app:payment_button_size="medium" app:paypal_color="gold" app:paypal_label="paypal" />
+    <com.paypal.checkout.paymentbutton.PayPalCreditButton android:id="@id/payPalCreditButton" android:tag="PayPal Credit" android:layout_width="fill_parent" android:layout_height="wrap_content" app:payment_button_shape="rectangle" app:payment_button_size="medium" app:paypal_credit_color="dark_blue" />
+    <com.paypal.checkout.paymentbutton.PayLaterButton android:id="@id/payLaterButton" android:tag="Pay Later" android:layout_width="fill_parent" android:layout_height="wrap_content" app:payment_button_shape="rectangle" app:payment_button_size="medium" app:paypal_color="gold" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+.class public Lio/netty/channel/DefaultEventLoop;
+.super Lio/netty/channel/SingleThreadEventLoop;
+.source "DefaultEventLoop.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    .line 26
+    move-object v1, v0
+
+    check-cast v1, Lio/netty/channel/EventLoopGroup;
+
+    invoke-direct {p0, v0}, Lio/netty/channel/DefaultEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/netty/channel/EventLoopGroup;)V
+    .locals 2
+
+    .line 38
+    new-instance v0, Lio/netty/util/concurrent/DefaultThreadFactory;
+
+    const-class v1, Lio/netty/channel/DefaultEventLoop;
+
+    invoke-direct {v0, v1}, Lio/netty/util/concurrent/DefaultThreadFactory;-><init>(Ljava/lang/Class;)V
+
+    invoke-direct {p0, p1, v0}, Lio/netty/channel/DefaultEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/ThreadFactory;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/Executor;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 46
+    invoke-direct {p0, p1, p2, v0}, Lio/netty/channel/SingleThreadEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/Executor;Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/ThreadFactory;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 42
+    invoke-direct {p0, p1, p2, v0}, Lio/netty/channel/SingleThreadEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/ThreadFactory;Z)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/concurrent/Executor;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 34
+    invoke-direct {p0, v0, p1}, Lio/netty/channel/DefaultEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/Executor;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/concurrent/ThreadFactory;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 30
+    invoke-direct {p0, v0, p1}, Lio/netty/channel/DefaultEventLoop;-><init>(Lio/netty/channel/EventLoopGroup;Ljava/util/concurrent/ThreadFactory;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected run()V
+    .locals 1
+
+    .line 52
+    :cond_0
+    invoke-virtual {p0}, Lio/netty/channel/DefaultEventLoop;->takeTask()Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 54
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+
+    .line 55
+    invoke-virtual {p0}, Lio/netty/channel/DefaultEventLoop;->updateLastExecutionTime()V
+
+    .line 58
+    :cond_1
+    invoke-virtual {p0}, Lio/netty/channel/DefaultEventLoop;->confirmShutdown()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+.end method

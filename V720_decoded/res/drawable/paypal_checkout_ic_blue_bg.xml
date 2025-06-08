@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="640.0dip" android:width="360.0dip" android:viewportWidth="360.0" android:viewportHeight="640.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__0" android:pathData="M-107,0.331L565,0.331C569.418,0.331 573,3.912 573,8.331L573,812.331L573,812.331L-115,812.331L-115,8.331C-115,3.912 -111.418,0.331 -107,0.331Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <group>
+        <clip-path android:pathData="M-107,0.331L565,0.331C569.418,0.331 573,3.912 573,8.331L573,812.331L573,812.331L-115,812.331L-115,8.331C-115,3.912 -111.418,0.331 -107,0.331Z M 0,0" />
+        <path android:fillColor="#ff000000" android:pathData="M-177,-57L538,-57A20,20 0,0 1,558 -37L558,677A20,20 0,0 1,538 697L-177,697A20,20 0,0 1,-197 677L-197,-37A20,20 0,0 1,-177 -57z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="1.0" android:fillType="nonZero" />
+        <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__1" android:pathData="M-177,-57L538,-57A20,20 0,0 1,558 -37L558,677A20,20 0,0 1,538 697L-177,697A20,20 0,0 1,-197 677L-197,-37A20,20 0,0 1,-177 -57z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+        <group>
+            <clip-path android:pathData="M-177,-57L538,-57A20,20 0,0 1,558 -37L558,677A20,20 0,0 1,538 697L-177,697A20,20 0,0 1,-197 677L-197,-37A20,20 0,0 1,-177 -57z M 0,0" />
+            <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__2" android:pathData="M247.131,-82C352.442,66.717 290.959,171.126 62.681,231.224C-165.596,291.323 -254.133,368.249 -202.928,462L-202.928,-82L247.131,-82Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+        </group>
+        <group>
+            <clip-path android:pathData="M1163,-57L448,-57A20,20 0,0 0,428 -37L428,677A20,20 0,0 0,448 697L1163,697A20,20 0,0 0,1183 677L1183,-37A20,20 0,0 0,1163 -57z M 0,0" />
+            <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__3" android:pathData="M285.869,435C180.558,583.717 242.041,688.126 470.319,748.224C698.596,808.323 787.133,885.249 735.928,979L735.928,435L285.869,435Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+        </group>
+        <group>
+            <clip-path android:pathData="M1153.949,964.273L968.893,273.636A20,20 121.84,0 0,944.398 259.494L254.727,444.291A20,20 98.68,0 0,240.585 468.786L425.641,1159.423A20,20 88.603,0 0,450.136 1173.565L1139.807,988.768A20,20 99.885,0 0,1153.949 964.273z M 0,0" />
+            <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__4" android:pathData="M577.324,341.334C302.802,239.808 166.389,378.5 168.084,757.411C169.778,1136.322 87.254,1305.548 -79.49,1265.088L764.49,1039.166L577.324,341.334Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:strokeAlpha="0.6730841" android:fillAlpha="0.6730841" android:fillType="nonZero" />
+        </group>
+        <group>
+            <clip-path android:pathData="M365.721,-235.856L550.777,454.781A20,20 119.817,0 1,536.635 479.276L-153.036,664.073A20,20 90.418,0 1,-177.531 649.931L-362.587,-40.706A20,20 101.212,0 1,-348.445 -65.201L341.226,-249.998A20,20 107.997,0 1,365.721 -235.856z M 0,0" />
+            <path android:fillColor="@drawable/$paypal_checkout_ic_blue_bg__5" android:pathData="M676.702,397.396C505.169,603.393 333.231,555.96 160.889,255.096C-11.452,-45.767 -154.578,-142.035 -268.488,-33.708L505.504,-240.896L676.702,397.396Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:strokeAlpha="0.5615699" android:fillAlpha="0.5615699" android:fillType="nonZero" />
+        </group>
+    </group>
+</vector>

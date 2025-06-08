@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/payPalAddressBookHeaderContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/addressBookHeaderLayout" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/paypal_checkout_white_color">
+        <ImageView android:id="@id/addressBookBackArrowImageView" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLBackButtonStyle" />
+        <TextView android:id="@id/addressBookTitleTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/backButtonWidthOffsetSpace" app:layout_constraintStart_toEndOf="@id/addressBookBackArrowImageView" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLTextViewTitle1Style" />
+        <Space android:id="@id/backButtonWidthOffsetSpace" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLHorizontalSpace.BackButtonOffset" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

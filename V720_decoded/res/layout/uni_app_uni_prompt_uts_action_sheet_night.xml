@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/line_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/line_title" android:background="@drawable/uni_app_uni_prompt_actionsheet_bg_rounded_night" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0dip" android:textColor="@color/uni_app_uni_prompt_dialog_sub_text_night" android:ellipsize="middle" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:singleLine="true" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/myRecyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+    <LinearLayout android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/line_cancel" android:background="@color/uni_app_uni_prompt_night_bg_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0dip" android:textColor="@color/uni_app_uni_prompt_dialog_title_text_night" android:gravity="center" android:id="@id/tvCancelAction" android:background="@drawable/uni_app_uni_prompt_actionsheet_button_select_total_night" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/uni_app_uni_prompt_cancel" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

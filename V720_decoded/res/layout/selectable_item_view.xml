@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title_label" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/paypal_checkout_padding_16x" android:paddingBottom="@dimen/paypal_checkout_padding_16x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/PYPLTextViewBody1Style" />
+    <View android:background="@color/paypal_checkout_gray_color_300" android:layout_width="fill_parent" android:layout_height="@dimen/paypal_checkout_divider_height" android:layout_marginBottom="@dimen/paypal_checkout_margin_16x" android:layout_below="@id/title_label" />
+</merge>

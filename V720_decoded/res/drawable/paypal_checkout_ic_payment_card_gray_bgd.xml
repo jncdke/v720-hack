@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/paypal_checkout_ic_payment_card_gray_bgd_vector" android:left="@dimen/paypal_checkout_padding_5x" android:top="@dimen/paypal_checkout_padding_5x" android:right="@dimen/paypal_checkout_padding_5x" android:bottom="@dimen/paypal_checkout_padding_5x" />
+</layer-list>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/paypal_checkout_margin_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@id/primary_split_balance_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/paypal_primary_split_balance_view" />
+        <include android:id="@id/secondary_split_balance_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/paypal_secondary_split_balance_view" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

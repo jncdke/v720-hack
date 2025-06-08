@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/payPalConversionRateHeaderContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/conversionCircleImageView" android:background="@android:color/transparent" android:layout_width="@dimen/paypal_checkout_circle_icon_width" android:layout_height="@dimen/paypal_checkout_circle_icon_height" android:src="@drawable/paypal_checkout_ic_currency_conversion_icon" android:contentDescription="@string/paypal_checkout_conversion_circle_image" android:elevation="@dimen/paypal_checkout_conversion_circle_elevation" app:layout_anchor="@id/nested_scroll_view" app:layout_anchorGravity="top|center" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/conversionHeaderLayout" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_header_margin_top" android:backgroundTint="@color/paypal_checkout_white_color">
+        <ImageView android:id="@id/conversionBackArrowImageView" style="@style/PYPLBackButtonStyle" />
+        <TextView android:id="@id/conversionTitleTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_margin_16x" android:layout_marginBottom="@dimen/paypal_checkout_margin_8x" android:text="@string/paypal_checkout_currency_for_this_purchase" android:layout_below="@id/conversionBackArrowImageView" android:layout_centerInParent="true" style="@style/PYPLTextViewTitleStyle" />
+    </RelativeLayout>
+</FrameLayout>

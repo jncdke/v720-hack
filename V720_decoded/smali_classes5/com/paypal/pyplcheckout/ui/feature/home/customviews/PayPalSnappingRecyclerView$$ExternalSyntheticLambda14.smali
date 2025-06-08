@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView$$ExternalSyntheticLambda14;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lcom/paypal/pyplcheckout/ui/feature/home/customviews/SnappingRecyclerView$OnSmoothScrollByListener;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView$$ExternalSyntheticLambda14;->f$0:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCompleted()V
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView$$ExternalSyntheticLambda14;->f$0:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;
+
+    invoke-static {v0}, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;->$r8$lambda$qo-nRvl3w6zSWYAHNWDd4YFscuA(Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalSnappingRecyclerView;)V
+
+    return-void
+.end method

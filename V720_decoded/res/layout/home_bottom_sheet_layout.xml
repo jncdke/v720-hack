@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/footer_container" android:background="@color/paypal_checkout_white_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_anchorGravity="bottom" />
+    <FrameLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_container">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/header_container" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation" />
+        <androidx.core.widget.NestedScrollView android:layout_gravity="bottom" android:id="@id/nested_scroll_view" android:background="@android:color/transparent" android:scrollbars="vertical" android:fadingEdgeLength="@dimen/paypal_checkout_paysheet_fading_length" android:clipToPadding="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_margin_32x" android:fadeScrollbars="true" android:requiresFadingEdge="vertical">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/body_container" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:nestedScrollingEnabled="false" android:backgroundTint="@color/paypal_checkout_white_color" />
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</merge>

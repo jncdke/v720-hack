@@ -1,0 +1,68 @@
+.class public final Lcom/cardinalcommerce/a/ECGOST2012SignatureSpi512;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/cardinalcommerce/a/GMCipherSpi$SM2;
+
+
+# instance fields
+.field private cca_continue:Ljava/security/SecureRandom;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getInstance(Lcom/cardinalcommerce/a/appendElement;)V
+    .locals 0
+
+    .line 1000
+    iget-object p1, p1, Lcom/cardinalcommerce/a/appendElement;->configure:Ljava/security/SecureRandom;
+
+    .line 0
+    iput-object p1, p0, Lcom/cardinalcommerce/a/ECGOST2012SignatureSpi512;->cca_continue:Ljava/security/SecureRandom;
+
+    return-void
+.end method
+
+.method public final init()Lcom/cardinalcommerce/a/PSSSignatureSpi$SHA256withRSA;
+    .locals 4
+
+    .line 0
+    new-instance v0, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD160;
+
+    iget-object v1, p0, Lcom/cardinalcommerce/a/ECGOST2012SignatureSpi512;->cca_continue:Ljava/security/SecureRandom;
+
+    invoke-direct {v0, v1}, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD160;-><init>(Ljava/security/SecureRandom;)V
+
+    const/16 v1, 0x20
+
+    .line 2000
+    new-array v1, v1, [B
+
+    iget-object v2, v0, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD160;->getInstance:[B
+
+    const/4 v3, 0x0
+
+    .line 3000
+    invoke-static {v2, v3, v1, v3}, Lcom/cardinalcommerce/a/ECKey;->Cardinal([BI[BI)V
+
+    .line 2000
+    new-instance v2, Lcom/cardinalcommerce/a/DigestSignatureSpi$SHA3_224;
+
+    invoke-direct {v2, v1, v3}, Lcom/cardinalcommerce/a/DigestSignatureSpi$SHA3_224;-><init>([BI)V
+
+    .line 0
+    new-instance v1, Lcom/cardinalcommerce/a/PSSSignatureSpi$SHA256withRSA;
+
+    invoke-direct {v1, v2, v0}, Lcom/cardinalcommerce/a/PSSSignatureSpi$SHA256withRSA;-><init>(Lcom/cardinalcommerce/a/setCCAImageUri;Lcom/cardinalcommerce/a/setCCAImageUri;)V
+
+    return-object v1
+.end method

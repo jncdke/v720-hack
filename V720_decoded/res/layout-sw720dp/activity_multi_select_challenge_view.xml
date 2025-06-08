@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/CardinalSDKTheme.ActionBar" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/challenge_toolbar_cf" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/landscape_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:paddingStart="@dimen/landscape_padding" android:paddingEnd="@dimen/landscape_padding">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/challenge_labelview_cf" />
+                <include android:id="@id/textbody" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/text_info_body_view" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/marginBottom" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="@dimen/width_0" android:layout_height="fill_parent" android:layout_weight="@integer/landscape_initial_ratio" />
+                    <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/width_0" android:layout_height="fill_parent" android:layout_weight="@integer/landscape_secondary_ratio">
+                        <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/challengeLabelText" android:textSize="@dimen/text_size_16" android:gravity="center" android:layout_gravity="center" android:id="@id/challengeInfoLabelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_20" android:layout_marginBottom="@dimen/marginBottom_10" android:text="@string/ss_challengeinfo_lable" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/multiSelectgroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" android:layout_marginBottom="@dimen/fab_margin" />
+                        <com.cardinalcommerce.a.setBottom android:theme="@style/otpbody.verfyBtn" android:id="@id/ss_submitAuthenticationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" android:text="@string/next" android:textAllCaps="false" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="@dimen/width_0" android:layout_height="fill_parent" android:layout_weight="@integer/landscape_initial_ratio" />
+                </LinearLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" layout="@layout/challege_footer" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/pbHeaderProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:translationZ="@dimen/fab_margin_2" />
+    </RelativeLayout>
+</RelativeLayout>

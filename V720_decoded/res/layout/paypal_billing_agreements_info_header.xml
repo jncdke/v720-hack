@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/paypal_checkout_billing_agreements_tone_1" android:layout_gravity="center" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_margin_16x" android:textAlignment="center" android:layout_marginStart="@dimen/paypal_checkout_margin_16x" android:layout_marginEnd="@dimen/paypal_checkout_margin_16x" style="@style/TextAppearance.PayPal.Checkout.Title1" />
+    <TextView android:textSize="@dimen/paypal_checkout_text_size_14" android:textColor="@color/paypal_checkout_primary_blue" android:layout_gravity="center" android:id="@id/authorization_link" android:padding="@dimen/paypal_checkout_textview_touch_target_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_checkout_billing_agreements_authorization_info" />
+</merge>

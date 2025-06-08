@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.kwad.components.ad.interstitial.aggregate.TransViewPager android:id="@id/ksad_multi_ad_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.kwad.components.ad.interstitial.aggregate.InterstitialAggregateManualTipsView android:layout_gravity="bottom|center" android:id="@id/ksad_manual_tips_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+    <com.kwad.components.ad.interstitial.aggregate.ViewPagerIndicator android:layout_gravity="bottom|center" android:id="@id/ksad_multi_ad_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" />
+    <com.kwad.components.ad.interstitial.aggregate.SlideTipsView android:layout_gravity="center|right" android:id="@id/ksad_left_slide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ksad_is_left_slide="true" />
+    <com.kwad.components.ad.interstitial.aggregate.SlideTipsView android:layout_gravity="center|left" android:id="@id/ksad_right_slide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ksad_is_left_slide="false" />
+</com.kwad.sdk.widget.KSFrameLayout>

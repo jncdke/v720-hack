@@ -1,0 +1,154 @@
+{
+    "version" : "2",
+    "prompt" : "template",
+    "title" : "Statement and Terms",
+    "titleLocales" : {
+        "zh-Hans" : "声明与条款",
+        "zh-Hant" : "聲明與條款",
+        "en" : "Statement and Terms",
+        "ja" : "ステートメントと条件",
+        "th" : "คำชี้แจงและข้อกำหนด",
+        "pt" : "Declaração e Termos",
+        "es" : "Declaración y Términos",
+        "de" : "Erklärung und Klauseln"
+    },
+    "message" : "　 Welcome to use V720. You can use this app to control, purchase, connect, share and other functions of smart devices. We will strictly abide by relevant laws and regulations and privacy policies to protect your personal information<br/>    In order to provide basic services, it is necessary to connect to the Internet and invoke your following restrictions or functions to collect necessary personal information:<br/>Necessary permissions (for basic services and functions of the app)<br/>   Get mobile phone account information:<br/>A function used to quickly log in with a mobile phone account within the app;<br/>Optional permissions (for additional functions, will be applied for when using related functions)<br/>·   Get location information:<br/>Used for device quick connection, discovery of nearby devices, Wi-Fi list and other functions.<br/>·   Get Device ID Software Install List：<br/>Used for functions such as device alarm push<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r
+\tyou can read<a href=\"https://v720.naxclow.com/user_agreement/#/enUserProtocol\"> “service agreement” </a>and<a href=\"https://v720.naxclow.com/user_agreement/#/enPrivacy\"> “Privacy Policy” </a>Learn more. If you agree, please click the button below to start accepting our services.",
+    "messageLocales" : {
+        "zh-Hans" : "　 欢迎你使用V720。你可使用本应用以实现智能设备的控制、购买、连接、设备共享等功能。 我们将严格遵守相关法律法规和隐私政策以保护您的个人信息<br/>　　为提供基本服务，需要联网以及调用你的如下杈限或功能，以收集必要的个人信息：<br/>必要权限（用于该应用的基本服务和功能）<br/>·   获取手机账号信息：<br/>用于应用内使用手机账号快速登录的功能;<br/>可选权限（用于附加功能，将在使用相关功能时申请）<br/>·   获取位置信息：<br/>用于设备快连、发现附近设备及 Wi-Fi列表等功能。<br/>·   获取设备ID 软件安装列表：<br/>用于设备警报推送等功能<br/><br/>你可阅读<a href=\"https://v720.naxclow.com/user_agreement/#/userProtocol\">《服务协议》</a>和<a href=\"https://v720.naxclow.com/user_agreement/#/privacy\">《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+        "zh-Hant" : "　 歡迎你使用V720。你可使用本應用以實現智能設備的控制、購買、連接、設備共享等功能。 我們將嚴格遵守相關法律法規和隱私政策以保護您的個人信息<br/>　　為提供基本服務，需要聯網以及調用你的如下杈限或功能，以收集必要的個人信息：<br/>必要權限（用於該應用的基本服務和功能）<br/>·   獲取手機賬號信息：<br/>用於應用內使用手機賬號快速登錄的功能;<br/>可選權限（用於附加功能，將在使用相關功能時申請）<br/>·   獲取位置信息：<br/>用於設備快連、發現附近設備及 Wi-Fi列表等功能。<br/>·   獲取設備ID 軟件安裝列表：<br/>用於設備警報推送等功能<br/><br/>你可閱讀<a href=\"https://v720.naxclow.com/user_agreement/#/zhHantUserProtocol\">《服務協議》</a>和<a href=\"https://v720.naxclow.com/user_agreement/#/zhHantPrivacy\">《隱私政策》</a>了解詳細信息。如果你同意，請點擊下面按鈕開始接受我們的服務。",
+        "en" : "　 Welcome to use V720. You can use this app to control, purchase, connect, share and other functions of smart devices. We will strictly abide by relevant laws and regulations and privacy policies to protect your personal information<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+    \t\t    In order to provide basic services, it is necessary to connect to the Internet and invoke your following restrictions or functions to collect necessary personal information:<br/>Necessary permissions (for basic services and functions of the app)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+    \t\t·   Get mobile phone account information:<br/>A function used to quickly log in with a mobile phone account within the app;<br/>Optional permissions (for additional functions, will be applied for when using related functions)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+    \t\t·   Get location information:<br/>Used for device quick connection, discovery of nearby devices, Wi-Fi list and other functions.<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Get Device ID Software Install List：<br/>Used for functions such as device alarm push<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+    \t\tyou can read<a href=\"https://v720.naxclow.com/user_agreement/#/enUserProtocol\"> “service agreement” </a>and<a href=\"https://v720.naxclow.com/user_agreement/#/enPrivacy\"> “Privacy Policy” </a>Learn more. If you agree, please click the button below to start accepting our services.",
+        "th" : "　 คุณสามารถใช้ V720 ได้ คุณสามารถใช้แอปนี้เพื่อควบคุม ซื้อ เชื่อมต่อ แชร์และฟังก์ชันอื่นๆ ของอุปกรณ์อัจฉริยะ เราจะปฏิบัติตามกฎหมายและข้อบังคับที่เกี่ยวข้องและนโยบายความเป็นส่วนตัวอย่างเคร่งครัดเพื่อปกป้องข้อมูลส่วนบุคคลของคุณ<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t    เพื่อให้บริการขั้นพื้นฐาน จำเป็นต้องเชื่อมต่ออินเทอร์เน็ตและเรียกใช้ข้อจำกัดหรือฟังก์ชันต่อไปนี้ของคุณเพื่อรวบรวมข้อมูลส่วนบุคคลที่จำเป็น:<br/>สิทธิ์ที่จำเป็น (สำหรับบริการและฟังก์ชันพื้นฐานของแอป)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   รับข้อมูลบัญชีมือถือ: <br/>ฟังก์ชั่นที่ใช้ในการเข้าสู่ระบบอย่างรวดเร็วด้วยบัญชีโทรศัพท์มือถือภายในแอพ;<br/>สิทธิ์เสริม (สำหรับฟังก์ชันเพิ่มเติม จะถูกนำมาใช้เมื่อใช้ฟังก์ชันที่เกี่ยวข้อง)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   รับข้อมูลสถานที่: <br/>ใช้สำหรับการเชื่อมต่ออุปกรณ์อย่างรวดเร็ว การค้นหาอุปกรณ์ใกล้เคียง รายการ Wi-Fi และฟังก์ชันอื่นๆ.<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   รับรายการติดตั้งซอฟต์แวร์ ID อุปกรณ์: <br/>ใช้สำหรับฟังก์ชันต่างๆ เช่น การกดสัญญาณเตือนอุปกรณ์<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\tคุณอ่านได้<a href=\"https://v720.naxclow.com/user_agreement/#/thUserProtocol\">'ข้อตกลงการบริการ'</a>และ<a href=\"https://v720.naxclow.com/user_agreement/#/thPrivacy\">'นโยบายส่วนบุคคล'</a>เรียนรู้เพิ่มเติม. หากคุณตกลง โปรดคลิกปุ่มด้านล่างเพื่อเริ่มยอมรับบริการของเรา.",
+        "ja" : "　 V720の使用へようこそ。このアプリを使用して、スマートデバイスの制御、購入、接続、共有、およびその他の機能を実行できます。 当社は、お客様の個人情報を保護するために、関連する法規制およびプライバシーポリシーを厳守します。<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t    基本的なサービスを提供するためには、インターネットに接続し、以下の制限事項や機能を呼び出して、必要な個人情報を収集する必要があります。：<br/>必要な権限（アプリの基本的なサービスと機能）<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   携帯電話のアカウント情報を入手する：<br/>アプリ内のモバイルアカウントですばやくログインするための機能;<br/>オプションの権限（追加機能の場合、関連する機能を使用する場合に適用されます）<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   位置情報を取得する：<br/>デバイスのクイック接続、近くのデバイスの検出、Wi-Fiリストなどの機能に使用されます。<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   デバイスIDソフトウェアインストールリストの取得：<br/>デバイスアラームプッシュなどの機能に使用<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\tあなたは読める<a href=\"https://v720.naxclow.com/user_agreement/#/jaUserProtocol\">《役務契約》</a>と<a href=\"https://v720.naxclow.com/user_agreement/#/jaPrivacy\">《プライバシー方針》</a>もっと詳しく知る。 同意する場合は、下のボタンをクリックして、サービスの受け入れを開始してください。",
+        "pt" : "　 Bem-vindo a usar V720. Você pode usar este app para controlar, comprar, conectar, compartilhar e outras funções de dispositivos inteligentes. Cumpriremos rigorosamente as leis e regulamentos relevantes e as políticas de privacidade para proteger suas informações pessoais<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t    Para fornecer serviços básicos, é necessário conectar-se à Internet e invocar suas seguintes restrições ou funções para coletar as informações pessoais necessárias: <br/>Permissões necessárias (para serviços e funções básicas do app)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Receber informações de conta de celular: <br/>Uma função usada para fazer login rapidamente com uma conta de celular dentro do aplicativo;<br/>Permissões opcionais (para funções adicionais, serão aplicadas ao utilizar funções relacionadas)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Obter informações de localização: <br/>Usado para conexão rápida do dispositivo, descoberta de dispositivos próximos, lista Wi-Fi e outras funções.<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Obter lista de instalação de software de identificação de dispositivo: <br/>Usado para funções como push de alarme do dispositivo.<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\tVocê pode ler<a href=\"https://v720.naxclow.com/user_agreement/#/ptUserProtocol\">《Acordo de Serviço》</a>e<a href=\"https://v720.naxclow.com/user_agreement/#/ptPrivacy\">《Política de Privacidade》</a>Para saber mais. Se você concordar, clique no botão abaixo para começar a aceitar nossos serviços.",
+        "es" : "　 Bienvenido a usar Casa inteligente de V720. Puede usar esta aplicación para realizar el control, compra, conectación, compartimiento y otras funciones de dispositivos inteligentes. Cumpliremos estrictamente las leyes y reglamentos pertinentes y las políticas de privacidad para proteger su información personal<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t    Para proporcionar servicios básicos, es necesario conectarse a Internet e invocar sus siguientes permisos o funciones para recopilar la información personal necesaria: <br/>Permisos opcionales (se utilizan para funciones adicionales, y se aplicarán al usar funciones relacionados)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Obtener información de la cuenta de teléfono móvil: <br/>Una función utilizada para iniciar sesión rápidamente con una cuenta de teléfono móvil dentro de la aplicación;<br/>Permissões opcionais (para funções adicionais, serão aplicadas ao utilizar funções relacionadas)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Obtener información de ubicación: <br/>Se utiliza para las funciones como la conexión rápida de dispositivos, la encontrada de dispositivos cercanos y la lista de Wi-Fi.<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Obtener la lista de instalación de software de ID de dispositivo: <br/>Se utiliza para funciones tales como pulsador de alarma de dispositivo.<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\tPuede leer<a href=\"https://v720.naxclow.com/user_agreement/#/esUserProtocol\">《Acuerdo de servicio》</a>Y<a href=\"https://v720.naxclow.com/user_agreement/#/esPrivacy\">《Política de privacidad》</a>Para saber más detalles Si está de acuerdo, haga clic en el botón a continuación para comenzar a aceptar nuestros servicios.",
+        "de" : "　 Willkommen bei V720. Sie können diese APP verwenden, um intelligente Geräte zu steuern, zu kaufen, zu verbinden, zu teilen usw.  Wir halten uns strikt an die einschlägigen Gesetze und Vorschriften und Datenschutzrichtlinien, um Ihre personenbezogenen Daten zu schützen<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t    Um grundlegende Dienste bereitzustellen, ist es erforderlich, eine Verbindung zum Internet zu erstellen und Ihre folgenden Berechtigungen oder Funktionen aufzurufen, um die erforderlichen personenbezogenen Daten zu erfassen: <br/>Permissões necessárias (para serviços e funções básicas do app)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Kontoinformationen der Handy erhalten: <br/>Eine Funktion zur schnellen Anmeldung mit einem Handykonto innerhalb der APP;<br/>Optionale Berechtigungen (für zusätzliche Funktionen, die werden bei Verwendung der betreffenden Funktionen angefragt)<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Standort-Information zu erhalten: <br/>Es dient für die Schnellverbindung des Gerätes, die Erkennung von Geräten in der Nähe, die WLAN-Liste und andere Funktionen<br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\t·   Rufen Sie die Geräte-ID-Software-Installationsliste ab: <br/>Wird für Funktionen wie Gerätealarm-Push verwendet<br/><br/>\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+\t\t\tSie können lesen<a href=\"https://v720.naxclow.com/user_agreement/#/deUserProtocol\">《Dienstleistungsvereinbarung》</a>Und<a href=\"https://v720.naxclow.com/user_agreement/#/dePrivacy\">《 Datenschutz-Politik》</a>Mehr erfahren. Klicken Sie bitte auf die Schaltfläche unten, wenn Sie damit einverstanden sind, um unsere Dienste anzunehmen."
+    },
+    "buttonAccept" : "agree and accept",
+    "buttonAcceptLocales" : {
+        "zh-Hans" : "同意并接受",
+        "zh-Hant" : "同意並接受",
+        "en" : "agree and accept",
+        "ja" : "同意して受け入れる",
+        "th" : "เห็นด้วยและยอมรับ",
+        "pt" : "Concordar e aceitar",
+        "es" : "Estar de acuerdo y aceptar",
+        "de" : "Zustimmen und akzeptieren"
+    },
+    "buttonRefuse" : "Exit",
+    "buttonRefuseLocales" : {
+        "zh-Hans" : "退出",
+        "zh-Hant" : "退出",
+        "en" : "Exit",
+        "ja" : "終了する",
+        "th" : "ล้มเลิก",
+        "pt" : "Sair",
+        "es" : "Salir",
+        "de" : "Beenden"
+    },
+    "second" : {
+        "title" : "confirmation prompt",
+        "titleLocales" : {
+            "zh-Hans" : "确认提示",
+            "zh-Hant" : "確認提示",
+            "en" : "confirmation prompt",
+            "ja" : "確認プロンプト",
+            "th" : "ข้อความยืนยัน",
+            "pt" : "Prompt de confirmação",
+            "es" : "Recordatorio confirmación",
+            "de" : "Bestätigungsaufforderung"
+        },
+        "message" : "　　Before entering the app, you need to agree<a href=\"https://v720.naxclow.com/user_agreement/#/enUserProtocol\"> “service agreement” </a>and<a href=\"https://v720.naxclow.com/user_agreement/#/enPrivacy\"> “Privacy Policy” </a>，Otherwise, the application will be exited.",
+        "messageLocales" : {
+            "zh-Hans" : "　　进入应用前，你需先同意<a href=\"https://v720.naxclow.com/user_agreement/#/userProtocol\">《服务协议》</a>和<a href=\"https://v720.naxclow.com/user_agreement/#/privacy\">《隐私政策》</a>，否则将退出应用。",
+            "zh-Hant" : "　　進入應用前，你需先同意<a href=\"https://v720.naxclow.com/user_agreement/#/zhHantUserProtocol\">《服務協議》</a>和<a href=\"https://v720.naxclow.com/user_agreement/#/zhHantPrivacy\">《隱私政策》</a>，否則將退出應用。",
+            "en" : "　　Before entering the app, you need to agree<a href=\"https://v720.naxclow.com/user_agreement/#/enUserProtocol\"> “service agreement” </a>and<a href=\"https://v720.naxclow.com/user_agreement/#/enPrivacy\"> “Privacy Policy” </a>，Otherwise, the application will be exited.",
+            "ja" : "　　アプリに入る前に、同意する必要があります<a href=\"https://v720.naxclow.com/user_agreement/#/jaUserProtocol\">《役務契約》</a>と<a href=\"https://v720.naxclow.com/user_agreement/#/jaPrivacy\">《プライバシー方針》</a>，そうしないと、アプリが終了します。",
+            "th" : "　　ก่อนเข้าแอพต้องตกลง<a href=\"https://v720.naxclow.com/user_agreement/#/thUserProtocol\">'ข้อตกลงการบริการ'</a>และ<a href=\"https://v720.naxclow.com/user_agreement/#/thPrivacy\">'นโยบายส่วนบุคคล'</a>,มิฉะนั้น แอปจะถูกปิด.",
+            "pt" : "　　Antes de entrar no aplicativo, você precisa concordar<a href=\"https://v720.naxclow.com/user_agreement/#/ptUserProtocol\">《Acordo de Serviço》</a>e<a href=\"https://v720.naxclow.com/user_agreement/#/ptPrivacy\">《Política de Privacidade》</a>，Caso contrário, o aplicativo será encerrado.",
+            "es" : "　　Antes de ingresar a la aplicación, debe aceptar<a href=\"https://v720.naxclow.com/user_agreement/#/esUserProtocol\">《Acuerdo de servicio》</a>Y<a href=\"https://v720.naxclow.com/user_agreement/#/esPrivacy\">《Política de privacidad》</a>,De lo contrario, salirá de la aplicación.",
+            "de" : "　　Bevor Sie in die App eintreten, müssen Sie zustimmen<a href=\"https://v720.naxclow.com/user_agreement/#/deUserProtocol\">《Dienstleistungsvereinbarung》</a>Und<a href=\"https://v720.naxclow.com/user_agreement/#/dePrivacy\">《Datenschutz-Politik》</a>,Sonst wird die APP beenden."
+        },
+        "buttonAccept" : "agree and continue",
+        "buttonAcceptLocales" : {
+            "zh-Hans" : "同意并继续",
+            "zh-Hant" : "同意並繼續",
+            "en" : "agree and continue",
+            "ja" : "同意して続行します",
+            "th" : "เห็นด้วยและดำเนินการต่อ",
+            "pt" : "Concordar e continuar",
+            "es" : "Estar de acuerdo y continuar",
+            "de" : "Zustimmen und weitermachen"
+        },
+        "buttonRefuse" : "Exit the app",
+        "buttonRefuseLocales" : {
+            "zh-Hans" : "退出应用",
+            "zh-Hant" : "退出應用",
+            "en" : "Exit the app",
+            "ja" : "アプリを終了します",
+            "th" : "ออกจากแอพ",
+            "pt" : "Sair do aplicativo",
+            "es" : "Salir de la aplicación",
+            "de" : "APP beenden"
+        }
+    },
+    "hrefLoader" : "system",
+    "disagreeMode" : {
+        "support" : false,
+        "loadNativePlugins" : true,
+        "visitorEntry" : false,
+        "showAlways" : true
+    },
+    "styles" : {
+        "backgroundColor" : "#e3e3e3",
+        "borderRadius" : "20px",
+        "title" : {
+            "color" : "#000000"
+        },
+        "titleLocales" : {
+            "color" : "#000000"
+        },
+        "buttonAccept" : {
+            "color" : "#236eff"
+        },
+        "buttonAcceptLocales" : {
+            "color" : "#236eff"
+        },
+        "buttonRefuse" : {
+            "color" : "#333333"
+        },
+        "buttonRefuseLocales" : {
+            "color" : "#333333"
+        }
+    }
+}

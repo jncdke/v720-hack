@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="9.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="@dimen/fab_margin" android:layout_weight="4.0">
+        <com.cardinalcommerce.a.setY android:id="@id/issuerImageView" android:layout_width="wrap_content" android:layout_height="30.0dip" android:contentDescription="@string/issuer_image" />
+    </LinearLayout>
+    <View android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_margin="@dimen/fab_margin" android:layout_weight="4.0">
+        <com.cardinalcommerce.a.setY android:id="@id/psImageView" android:layout_width="wrap_content" android:layout_height="30.0dip" android:contentDescription="@string/ps_image" />
+    </LinearLayout>
+</LinearLayout>

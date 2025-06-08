@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emui_master_body_2">13.0sp</dimen>
+    <dimen name="emui_master_subtitle">15.0sp</dimen>
+    <dimen name="margin_l">16.0dip</dimen>
+    <dimen name="margin_m">8.0dip</dimen>
+    <dimen name="margin_xs">2.0dip</dimen>
+</resources>

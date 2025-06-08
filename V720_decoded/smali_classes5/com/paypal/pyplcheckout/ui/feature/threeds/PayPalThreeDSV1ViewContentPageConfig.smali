@@ -1,0 +1,340 @@
+.class public final Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;
+.super Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;
+.source "PayPalThreeDSV1ViewContentPageConfig.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nPayPalThreeDSV1ViewContentPageConfig.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PayPalThreeDSV1ViewContentPageConfig.kt\ncom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,68:1\n1851#2,2:69\n1851#2,2:71\n1851#2,2:73\n*S KotlinDebug\n*F\n+ 1 PayPalThreeDSV1ViewContentPageConfig.kt\ncom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig\n*L\n63#1:69,2\n64#1:71,2\n65#1:73,2\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u0001B)\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0002\u0010\tJ\u0006\u0010\n\u001a\u00020\u000b\u00a8\u0006\u000c"
+    }
+    d2 = {
+        "Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;",
+        "Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;",
+        "context",
+        "Landroid/content/Context;",
+        "fragment",
+        "Landroidx/fragment/app/Fragment;",
+        "payPalThreeDSViewListener",
+        "Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;",
+        "contentPage",
+        "(Landroid/content/Context;Landroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;)V",
+        "removeContentViewListeners",
+        "",
+        "pyplcheckout_externalThreedsRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;)V
+    .locals 18
+
+    move-object/from16 v0, p0
+
+    const-string v1, "context"
+
+    move-object/from16 v15, p1
+
+    invoke-static {v15, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "fragment"
+
+    move-object/from16 v14, p2
+
+    invoke-static {v14, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 15
+    invoke-direct/range {p0 .. p0}, Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;-><init>()V
+
+    if-nez p4, :cond_0
+
+    .line 18
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v1, Ljava/util/List;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->headerContentViewsList:Ljava/util/List;
+
+    .line 19
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v1, Ljava/util/List;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->bodyContentViewsList:Ljava/util/List;
+
+    .line 20
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v1, Ljava/util/List;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->footerContentViewsList:Ljava/util/List;
+
+    .line 22
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->headerContentViewsList:Ljava/util/List;
+
+    .line 23
+    new-instance v10, Lcom/paypal/pyplcheckout/ui/feature/threeds/views/PayPalThreeDSV1HeaderView;
+
+    .line 26
+    move-object/from16 v7, p3
+
+    check-cast v7, Lcom/paypal/pyplcheckout/ui/feature/threeds/interfaces/PayPalThreeDSV1HeaderViewListener;
+
+    const/4 v8, 0x6
+
+    const/4 v9, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v2, v10
+
+    move-object/from16 v3, p1
+
+    move-object/from16 v6, p2
+
+    .line 23
+    invoke-direct/range {v2 .. v9}, Lcom/paypal/pyplcheckout/ui/feature/threeds/views/PayPalThreeDSV1HeaderView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILandroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/threeds/interfaces/PayPalThreeDSV1HeaderViewListener;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 22
+    invoke-interface {v1, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 29
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->bodyContentViewsList:Ljava/util/List;
+
+    .line 30
+    new-instance v10, Lcom/paypal/pyplcheckout/ui/feature/threeds/views/PayPalThreeDSV1StepUpView;
+
+    .line 33
+    move-object/from16 v7, p3
+
+    check-cast v7, Lcom/paypal/pyplcheckout/ui/feature/threeds/interfaces/PayPalThreeDSV1StepUpViewListener;
+
+    move-object v2, v10
+
+    .line 30
+    invoke-direct/range {v2 .. v9}, Lcom/paypal/pyplcheckout/ui/feature/threeds/views/PayPalThreeDSV1StepUpView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILandroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/threeds/interfaces/PayPalThreeDSV1StepUpViewListener;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 29
+    invoke-interface {v1, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 38
+    :cond_0
+    invoke-virtual/range {p4 .. p4}, Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;->getHeaderContentViewsList()Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "contentPage.headerContentViewsList"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v16, 0x1df8
+
+    const/16 v17, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    move-object/from16 v2, p1
+
+    move-object/from16 v3, p2
+
+    move-object/from16 v10, p3
+
+    move/from16 v14, v16
+
+    move-object/from16 v15, v17
+
+    .line 37
+    invoke-static/range {v1 .. v15}, Lcom/paypal/pyplcheckout/ui/navigation/NavigationUtils;->createContentViewNewInstance$default(Ljava/util/List;Landroid/content/Context;Landroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/userprofile/UserProfileViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/AddressBookViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrate/pageconfig/ConversionRateViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrateprotection/pageconfig/RateProtectionViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/home/view/HomeViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/shipping/ShippingMethodsViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressReviewViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/crypto/pageconfig/CryptoConsentViewListenerImpl;ILjava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->headerContentViewsList:Ljava/util/List;
+
+    .line 46
+    invoke-virtual/range {p4 .. p4}, Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;->getBodyContentViewsList()Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "contentPage.bodyContentViewsList"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v14, 0x1df8
+
+    const/4 v15, 0x0
+
+    move-object/from16 v2, p1
+
+    .line 44
+    invoke-static/range {v1 .. v15}, Lcom/paypal/pyplcheckout/ui/navigation/NavigationUtils;->createContentViewNewInstance$default(Ljava/util/List;Landroid/content/Context;Landroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/userprofile/UserProfileViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/AddressBookViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrate/pageconfig/ConversionRateViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrateprotection/pageconfig/RateProtectionViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/home/view/HomeViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/shipping/ShippingMethodsViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressReviewViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/crypto/pageconfig/CryptoConsentViewListenerImpl;ILjava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->bodyContentViewsList:Ljava/util/List;
+
+    .line 54
+    invoke-virtual/range {p4 .. p4}, Lcom/paypal/pyplcheckout/ui/navigation/ContentPage;->getFooterContentViewsList()Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "contentPage.footerContentViewsList"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object/from16 v2, p1
+
+    .line 52
+    invoke-static/range {v1 .. v15}, Lcom/paypal/pyplcheckout/ui/navigation/NavigationUtils;->createContentViewNewInstance$default(Ljava/util/List;Landroid/content/Context;Landroidx/fragment/app/Fragment;Lcom/paypal/pyplcheckout/ui/feature/userprofile/UserProfileViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/AddressBookViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrate/pageconfig/ConversionRateViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/conversionrateprotection/pageconfig/RateProtectionViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/home/view/HomeViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/shipping/ShippingMethodsViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/addressbook/model/NewShippingAddressReviewViewListenerImpl;Lcom/paypal/pyplcheckout/ui/feature/crypto/pageconfig/CryptoConsentViewListenerImpl;ILjava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->footerContentViewsList:Ljava/util/List;
+
+    :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final removeContentViewListeners()V
+    .locals 2
+
+    .line 63
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->headerContentViewsList:Ljava/util/List;
+
+    const-string v1, "headerContentViewsList"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 69
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;
+
+    .line 63
+    invoke-interface {v1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;->removeListeners()V
+
+    goto :goto_0
+
+    .line 64
+    :cond_0
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->bodyContentViewsList:Ljava/util/List;
+
+    const-string v1, "bodyContentViewsList"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 71
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;
+
+    .line 64
+    invoke-interface {v1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;->removeListeners()V
+
+    goto :goto_1
+
+    .line 65
+    :cond_1
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/threeds/PayPalThreeDSV1ViewContentPageConfig;->footerContentViewsList:Ljava/util/List;
+
+    const-string v1, "footerContentViewsList"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 73
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;
+
+    .line 65
+    invoke-interface {v1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;->removeListeners()V
+
+    goto :goto_2
+
+    :cond_2
+    return-void
+.end method

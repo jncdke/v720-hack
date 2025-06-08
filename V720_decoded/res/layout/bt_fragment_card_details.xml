@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/bt_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="?homeAsUpIndicator" app:theme="@style/bt_toolbar_theme" app:title="@string/bt_card_details" />
+    <ScrollView android:background="@color/bt_base_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <com.braintreepayments.cardform.view.CardForm android:id="@id/bt_card_form" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.braintreepayments.api.AnimatedButtonView android:id="@id/bt_animated_button_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" app:bt_buttonText="@string/bt_add_card" />
+            <TextView android:gravity="center" android:linksClickable="true" android:id="@id/bt_privacy_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/bt_notice_of_collection" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

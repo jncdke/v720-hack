@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_container" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/back_arrow" style="@style/PYPLBackButtonStyle" />
+    <TextView android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/paypal_checkout_add_card_full_header" android:layout_weight="0.33" style="@style/PYPLTextViewTitleStyle" />
+    <Space android:id="@id/backButtonWidthOffsetSpace" style="@style/PYPLHorizontalSpace.BackButtonOffset" />
+</LinearLayout>

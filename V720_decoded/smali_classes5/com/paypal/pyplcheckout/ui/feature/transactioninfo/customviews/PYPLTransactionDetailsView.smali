@@ -1,0 +1,932 @@
+.class public final Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;
+.super Landroid/widget/RelativeLayout;
+.source "PYPLTransactionDetailsView.kt"
+
+# interfaces
+.implements Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;
+.implements Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$Companion;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nPYPLTransactionDetailsView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PYPLTransactionDetailsView.kt\ncom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView\n+ 2 SdkComponent.kt\ncom/paypal/pyplcheckout/di/SdkComponentKt\n*L\n1#1,113:1\n265#2,23:114\n*S KotlinDebug\n*F\n+ 1 PYPLTransactionDetailsView.kt\ncom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView\n*L\n51#1:114,23\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0018\u0000 -2\u00020\u00012\u00020\u00022\u00020\u0003:\u0001-B%\u0008\u0007\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0008\u0010\u001f\u001a\u00020 H\u0016J\u0008\u0010!\u001a\u00020\"H\u0016J\u0018\u0010#\u001a\u0004\u0018\u00010$2\u000c\u0010%\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010&H\u0016J\u0008\u0010\'\u001a\u00020(H\u0016J\n\u0010)\u001a\u0004\u0018\u00010*H\u0016J\u0008\u0010+\u001a\u00020(H\u0014J\u0008\u0010,\u001a\u00020(H\u0016R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0001X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001b\u0010\u0019\u001a\u00020\u001a8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u001d\u0010\u001e\u001a\u0004\u0008\u001b\u0010\u001c\u00a8\u0006."
+    }
+    d2 = {
+        "Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;",
+        "Landroid/widget/RelativeLayout;",
+        "Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;",
+        "Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel;",
+        "context",
+        "Landroid/content/Context;",
+        "attrs",
+        "Landroid/util/AttributeSet;",
+        "defStyleAttr",
+        "",
+        "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
+        "buttonSessionIDTextView",
+        "Landroid/widget/TextView;",
+        "buyerIdTextView",
+        "deviceIdTextView",
+        "ecTokenTextView",
+        "finishedCheckoutListener",
+        "Lcom/paypal/pyplcheckout/common/events/EventListener;",
+        "merchantIdTextView",
+        "payNowBtn",
+        "Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;",
+        "payNowContainer",
+        "payNowPb",
+        "Landroid/widget/ProgressBar;",
+        "sdkVersionTextView",
+        "viewModel",
+        "Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;",
+        "getViewModel",
+        "()Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;",
+        "viewModel$delegate",
+        "Lkotlin/Lazy;",
+        "getContentViewMinHeight",
+        "",
+        "getIsAnchoredToBottomSheet",
+        "",
+        "getView",
+        "Landroid/view/View;",
+        "genericViewData",
+        "Lcom/paypal/pyplcheckout/data/model/GenericViewData;",
+        "initViewModelObservers",
+        "",
+        "listenToEvent",
+        "Lcom/paypal/pyplcheckout/common/events/EventType;",
+        "onAttachedToWindow",
+        "removeListeners",
+        "Companion",
+        "pyplcheckout_externalThreedsRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$Companion;
+
+.field public static final TAG:Ljava/lang/String;
+
+
+# instance fields
+.field public _$_findViewCache:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private buttonSessionIDTextView:Landroid/widget/TextView;
+
+.field private buyerIdTextView:Landroid/widget/TextView;
+
+.field private deviceIdTextView:Landroid/widget/TextView;
+
+.field private ecTokenTextView:Landroid/widget/TextView;
+
+.field private finishedCheckoutListener:Lcom/paypal/pyplcheckout/common/events/EventListener;
+
+.field private merchantIdTextView:Landroid/widget/TextView;
+
+.field private payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+.field private payNowContainer:Landroid/widget/RelativeLayout;
+
+.field private payNowPb:Landroid/widget/ProgressBar;
+
+.field private sdkVersionTextView:Landroid/widget/TextView;
+
+.field private final viewModel$delegate:Lkotlin/Lazy;
+
+
+# direct methods
+.method public static synthetic $r8$lambda$TyxzsoK3sOoxqwoIktxx9mmmBbY(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->_init_$lambda-0(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Landroid/view/View;)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$ffB-WcNo4NXXvGfLc9AQ3wap3ug(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->initViewModelObservers$lambda-1(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;)V
+
+    return-void
+.end method
+
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->Companion:Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$Companion;
+
+    .line 36
+    const-string v0, "PYPLTransactionDetailsView::class.java.simpleName"
+
+    const-string v1, "PYPLTransactionDetailsView"
+
+    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sput-object v1, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->TAG:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 7
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v5, 0x6
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    invoke-direct/range {v1 .. v6}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 7
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    const/4 v4, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    invoke-direct/range {v1 .. v6}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    const-string v2, "context"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 26
+    new-instance v2, Ljava/util/LinkedHashMap;
+
+    invoke-direct {v2}, Ljava/util/LinkedHashMap;-><init>()V
+
+    check-cast v2, Ljava/util/Map;
+
+    iput-object v2, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->_$_findViewCache:Ljava/util/Map;
+
+    .line 30
+    invoke-direct/range {p0 .. p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 116
+    sget-object v2, Lcom/paypal/pyplcheckout/di/SdkComponent;->Companion:Lcom/paypal/pyplcheckout/di/SdkComponent$Companion;
+
+    invoke-virtual {v2}, Lcom/paypal/pyplcheckout/di/SdkComponent$Companion;->getInstance()Lcom/paypal/pyplcheckout/di/SdkComponent;
+
+    move-result-object v2
+
+    .line 117
+    new-instance v3, Lcom/paypal/pyplcheckout/di/SdkComponentKt$activityViewModels$1;
+
+    invoke-direct {v3, v2}, Lcom/paypal/pyplcheckout/di/SdkComponentKt$activityViewModels$1;-><init>(Lcom/paypal/pyplcheckout/di/SdkComponent;)V
+
+    check-cast v3, Lkotlin/jvm/functions/Function0;
+
+    .line 119
+    instance-of v2, v1, Landroidx/activity/ComponentActivity;
+
+    if-eqz v2, :cond_1
+
+    .line 128
+    move-object v2, v1
+
+    check-cast v2, Landroidx/activity/ComponentActivity;
+
+    .line 136
+    new-instance v4, Landroidx/lifecycle/ViewModelLazy;
+
+    const-class v5, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;
+
+    invoke-static {v5}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
+
+    move-result-object v5
+
+    new-instance v6, Lcom/paypal/pyplcheckout/di/SdkComponentKt$activityViewModels$4;
+
+    invoke-direct {v6, v2}, Lcom/paypal/pyplcheckout/di/SdkComponentKt$activityViewModels$4;-><init>(Landroidx/activity/ComponentActivity;)V
+
+    check-cast v6, Lkotlin/jvm/functions/Function0;
+
+    invoke-direct {v4, v5, v6, v3}, Landroidx/lifecycle/ViewModelLazy;-><init>(Lkotlin/reflect/KClass;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+
+    check-cast v4, Lkotlin/Lazy;
+
+    .line 51
+    iput-object v4, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->viewModel$delegate:Lkotlin/Lazy;
+
+    .line 54
+    sget v2, Lcom/paypal/pyplcheckout/R$layout;->paypal_transaction_details_view_layout:I
+
+    move-object v3, v0
+
+    check-cast v3, Landroid/view/ViewGroup;
+
+    invoke-static {v1, v2, v3}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 55
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->ec_token_text:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.ec_token_text)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->ecTokenTextView:Landroid/widget/TextView;
+
+    .line 56
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->button_session_text:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.button_session_text)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->buttonSessionIDTextView:Landroid/widget/TextView;
+
+    .line 57
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->deviceIdTextView:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.deviceIdTextView)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->deviceIdTextView:Landroid/widget/TextView;
+
+    .line 58
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->paypal_merchant_id:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.paypal_merchant_id)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->merchantIdTextView:Landroid/widget/TextView;
+
+    .line 59
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->paypal_buyer_id:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.paypal_buyer_id)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->buyerIdTextView:Landroid/widget/TextView;
+
+    .line 60
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->paypal_sdk_version:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.paypal_sdk_version)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/TextView;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->sdkVersionTextView:Landroid/widget/TextView;
+
+    .line 61
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->pay_now_container:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.pay_now_container)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/RelativeLayout;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowContainer:Landroid/widget/RelativeLayout;
+
+    .line 62
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->pay_now_btn:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.pay_now_btn)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    .line 63
+    sget v1, Lcom/paypal/pyplcheckout/R$id;->pay_now_progress_spinner:I
+
+    invoke-virtual {v0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const-string v2, "findViewById(R.id.pay_now_progress_spinner)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/ProgressBar;
+
+    iput-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowPb:Landroid/widget/ProgressBar;
+
+    .line 64
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    sget-object v2, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonShape;->MATERIAL_DESIGN:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonShape;
+
+    invoke-virtual {v1, v2}, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;->setShape(Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonShape;)V
+
+    .line 65
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    sget-object v2, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonColor;->GRAY:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonColor;
+
+    invoke-virtual {v1, v2}, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;->setColor(Lcom/paypal/pyplcheckout/ui/feature/home/customviews/ActionButtonColor;)V
+
+    .line 66
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    invoke-virtual/range {p0 .. p0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    sget v3, Lcom/paypal/pyplcheckout/R$string;->paypal_checkout_pay_now:I
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;->updateButtonText(Ljava/lang/String;)V
+
+    .line 68
+    sget-object v1, Lcom/paypal/pyplcheckout/data/repositories/AppBuildConfig;->INSTANCE:Lcom/paypal/pyplcheckout/data/repositories/AppBuildConfig;
+
+    invoke-virtual {v1}, Lcom/paypal/pyplcheckout/data/repositories/AppBuildConfig;->getDebug()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 69
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowContainer:Landroid/widget/RelativeLayout;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
+
+    .line 70
+    iget-object v1, v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowBtn:Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;
+
+    new-instance v2, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$$ExternalSyntheticLambda0;
+
+    invoke-direct {v2, v0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$$ExternalSyntheticLambda0;-><init>(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;)V
+
+    invoke-virtual {v1, v2}, Lcom/paypal/pyplcheckout/ui/feature/home/customviews/PayPalActionButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :cond_0
+    return-void
+
+    .line 121
+    :cond_1
+    sget-object v3, Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$ErrorType;->FATAL:Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$ErrorType;
+
+    .line 122
+    sget-object v4, Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$EventCode;->E407:Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$EventCode;
+
+    .line 124
+    sget-object v8, Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$TransitionName;->CONTEXT_INSTANCE:Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$TransitionName;
+
+    const/16 v17, 0x3fd8
+
+    const/16 v18, 0x0
+
+    .line 120
+    const-string v5, "Context is not an instance of ComponentActivity"
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    invoke-static/range {v3 .. v18}, Lcom/paypal/pyplcheckout/instrumentation/di/PLog;->error$default(Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$ErrorType;Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$EventCode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$TransitionName;Lcom/paypal/pyplcheckout/instrumentation/constants/PEnums$StateName;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Lcom/paypal/pyplcheckout/instrumentation/utils/InstrumentationEvent$InstrumentationEventBuilder;ILjava/lang/Object;)V
+
+    .line 119
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "Context is not an instance of ComponentActivity"
+
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_1
+
+    const/4 p3, 0x0
+
+    .line 26
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method private static final _init_$lambda-0(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Landroid/view/View;)V
+    .locals 2
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 71
+    iget-object p0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->payNowPb:Landroid/widget/ProgressBar;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroid/widget/ProgressBar;->setVisibility(I)V
+
+    .line 72
+    sget-object p0, Lcom/paypal/pyplcheckout/common/events/Events;->Companion:Lcom/paypal/pyplcheckout/common/events/Events$Companion;
+
+    invoke-virtual {p0}, Lcom/paypal/pyplcheckout/common/events/Events$Companion;->getInstance()Lcom/paypal/pyplcheckout/common/events/Events;
+
+    move-result-object p0
+
+    sget-object p1, Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;->FINALIZE_CHECKOUT:Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;
+
+    check-cast p1, Lcom/paypal/pyplcheckout/common/events/EventType;
+
+    new-instance v0, Lcom/paypal/pyplcheckout/common/events/Success;
+
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lcom/paypal/pyplcheckout/common/events/Success;-><init>(Ljava/lang/Object;)V
+
+    check-cast v0, Lcom/paypal/pyplcheckout/common/events/ResultData;
+
+    invoke-virtual {p0, p1, v0}, Lcom/paypal/pyplcheckout/common/events/Events;->fire(Lcom/paypal/pyplcheckout/common/events/EventType;Lcom/paypal/pyplcheckout/common/events/ResultData;)V
+
+    return-void
+.end method
+
+.method private final getViewModel()Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;
+    .locals 1
+
+    .line 51
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->viewModel$delegate:Lkotlin/Lazy;
+
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;
+
+    return-object v0
+.end method
+
+.method private static final initViewModelObservers$lambda-1(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;)V
+    .locals 2
+
+    const-string v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "details"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 84
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->ecTokenTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getEcToken()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 85
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->buttonSessionIDTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getButtonSessionId()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 86
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->deviceIdTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getDeviceId()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 87
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->merchantIdTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getMerchantId()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 88
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->buyerIdTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getBuyerId()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 89
+    iget-object p0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->sdkVersionTextView:Landroid/widget/TextView;
+
+    invoke-virtual {p1}, Lcom/paypal/pyplcheckout/domain/debug/TransactionDetails;->getSdkVersion()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public _$_clearFindViewByIdCache()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->_$_findViewCache:Ljava/util/Map;
+
+    invoke-interface {v0}, Ljava/util/Map;->clear()V
+
+    return-void
+.end method
+
+.method public _$_findCachedViewById(I)Landroid/view/View;
+    .locals 2
+
+    iget-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->_$_findViewCache:Ljava/util/Map;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p0, p1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :cond_1
+    :goto_0
+    return-object v1
+.end method
+
+.method public getComponentActivity(Landroid/content/Context;)Landroidx/activity/ComponentActivity;
+    .locals 0
+
+    .line 26
+    invoke-static {p0, p1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel$DefaultImpls;->getComponentActivity(Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel;Landroid/content/Context;)Landroidx/activity/ComponentActivity;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getContentViewMinHeight()F
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getIsAnchoredToBottomSheet()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getLifecycleOwner(Landroid/view/View;)Landroidx/lifecycle/LifecycleOwner;
+    .locals 0
+
+    .line 26
+    invoke-static {p0, p1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel$DefaultImpls;->getLifecycleOwner(Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ICustomViewsViewModel;Landroid/view/View;)Landroidx/lifecycle/LifecycleOwner;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public getView(Lcom/paypal/pyplcheckout/data/model/GenericViewData;)Landroid/view/View;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/paypal/pyplcheckout/data/model/GenericViewData<",
+            "*>;)",
+            "Landroid/view/View;"
+        }
+    .end annotation
+
+    .line 105
+    move-object p1, p0
+
+    check-cast p1, Landroid/view/View;
+
+    return-object p1
+.end method
+
+.method public synthetic getViewId()Ljava/lang/String;
+    .locals 1
+
+    invoke-static {p0}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/Identifiable$-CC;->$default$getViewId(Lcom/paypal/pyplcheckout/ui/navigation/interfaces/Identifiable;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public initViewModelObservers()V
+    .locals 3
+
+    .line 83
+    invoke-direct {p0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->getViewModel()Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/TransactionDetailsViewModel;->getDetails()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    move-object v1, p0
+
+    check-cast v1, Landroid/view/View;
+
+    invoke-virtual {p0, v1}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->getLifecycleOwner(Landroid/view/View;)Landroidx/lifecycle/LifecycleOwner;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$$ExternalSyntheticLambda1;
+
+    invoke-direct {v2, p0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$$ExternalSyntheticLambda1;-><init>(Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;)V
+
+    invoke-virtual {v0, v1, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 92
+    new-instance v0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$initViewModelObservers$2;
+
+    invoke-direct {v0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView$initViewModelObservers$2;-><init>()V
+
+    check-cast v0, Lcom/paypal/pyplcheckout/common/events/EventListener;
+
+    iput-object v0, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->finishedCheckoutListener:Lcom/paypal/pyplcheckout/common/events/EventListener;
+
+    .line 98
+    sget-object v0, Lcom/paypal/pyplcheckout/common/events/Events;->Companion:Lcom/paypal/pyplcheckout/common/events/Events$Companion;
+
+    invoke-virtual {v0}, Lcom/paypal/pyplcheckout/common/events/Events$Companion;->getInstance()Lcom/paypal/pyplcheckout/common/events/Events;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;->FINISHED_CHECKOUT_ON_APPROVE:Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;
+
+    check-cast v1, Lcom/paypal/pyplcheckout/common/events/EventType;
+
+    iget-object v2, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->finishedCheckoutListener:Lcom/paypal/pyplcheckout/common/events/EventListener;
+
+    if-nez v2, :cond_0
+
+    const-string v2, "finishedCheckoutListener"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    :cond_0
+    invoke-virtual {v0, v1, v2}, Lcom/paypal/pyplcheckout/common/events/Events;->listen(Lcom/paypal/pyplcheckout/common/events/EventType;Lcom/paypal/pyplcheckout/common/events/EventListener;)V
+
+    return-void
+.end method
+
+.method public listenToEvent()Lcom/paypal/pyplcheckout/common/events/EventType;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method protected onAttachedToWindow()V
+    .locals 0
+
+    .line 78
+    invoke-super {p0}, Landroid/widget/RelativeLayout;->onAttachedToWindow()V
+
+    .line 79
+    invoke-virtual {p0}, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->initViewModelObservers()V
+
+    return-void
+.end method
+
+.method public removeListeners()V
+    .locals 3
+
+    .line 102
+    sget-object v0, Lcom/paypal/pyplcheckout/common/events/Events;->Companion:Lcom/paypal/pyplcheckout/common/events/Events$Companion;
+
+    invoke-virtual {v0}, Lcom/paypal/pyplcheckout/common/events/Events$Companion;->getInstance()Lcom/paypal/pyplcheckout/common/events/Events;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;->FINISHED_CHECKOUT_ON_APPROVE:Lcom/paypal/pyplcheckout/common/events/PayPalEventTypes;
+
+    check-cast v1, Lcom/paypal/pyplcheckout/common/events/EventType;
+
+    iget-object v2, p0, Lcom/paypal/pyplcheckout/ui/feature/transactioninfo/customviews/PYPLTransactionDetailsView;->finishedCheckoutListener:Lcom/paypal/pyplcheckout/common/events/EventListener;
+
+    if-nez v2, :cond_0
+
+    const-string v2, "finishedCheckoutListener"
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    :cond_0
+    invoke-virtual {v0, v1, v2}, Lcom/paypal/pyplcheckout/common/events/Events;->removeListener(Lcom/paypal/pyplcheckout/common/events/EventType;Lcom/paypal/pyplcheckout/common/events/EventListener;)V
+
+    return-void
+.end method
+
+.method public synthetic setContentViewVisibility(I)V
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView$-CC;->$default$setContentViewVisibility(Lcom/paypal/pyplcheckout/ui/navigation/interfaces/ContentView;I)V
+
+    return-void
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:minWidth="@dimen/paypal_checkout_paypal_edit_text_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.paypal.pyplcheckout.ui.utils.ErrorPaddingInputLayout android:id="@id/errorPaddingInputLayout" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorEnabled="false" style="@style/Pypl.TextInputLayoutStyle">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView android:theme="@style/PYPLTextInputEditTextTheme" android:gravity="start|center" android:id="@id/textInputEditText" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/paypal_checkout_paypal_edit_text_min_height" android:singleLine="true" style="@style/Pypl.FullEditTextStyle" />
+    </com.paypal.pyplcheckout.ui.utils.ErrorPaddingInputLayout>
+</merge>

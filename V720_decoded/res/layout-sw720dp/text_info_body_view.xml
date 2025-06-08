@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dividerLine" android:background="@color/lightGrey" android:layout_width="fill_parent" android:layout_height="@dimen/fab_margin_2" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/ChallengeToolbar.LabelText" android:textSize="@dimen/text_size_22" android:layout_gravity="start" android:id="@id/challengeInfoHeaderTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin_16" android:layout_marginBottom="@dimen/fab_margin" android:text="@string/verify_by_phone" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/marginBottom">
+        <com.cardinalcommerce.a.setY android:id="@id/warningIndicator" android:layout_width="@dimen/warningInddims" android:layout_height="@dimen/warningInddims" android:layout_margin="@dimen/activity_vertical_margin" android:src="@drawable/warning" android:contentDescription="TODO" />
+        <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/otpBodyText" android:textSize="@dimen/text_size_16" android:id="@id/challengeInfoTextView" android:focusable="false" android:scrollbars="vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/textview" />
+    </LinearLayout>
+</LinearLayout>

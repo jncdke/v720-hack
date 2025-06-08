@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/paypal_checkout_background_scrim_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:id="@id/bottomScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.paypal.pyplcheckout.ui.feature.home.customviews.AutoCloseBottomSheetBehavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/backArrowImageView" android:background="@null" android:padding="8.0dip" android:layout_width="@dimen/paypal_checkout_back_button_size" android:layout_height="@dimen/paypal_checkout_back_button_size" android:layout_margin="@dimen/paypal_checkout_margin_16x" android:src="@drawable/paypal_checkout_ic_arrow_back_icon" android:contentDescription="@string/paypal_checkout_go_back_btn" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/closeImageView" android:background="@null" android:padding="@dimen/paypal_checkout_margin_10x" android:layout_width="@dimen/paypal_checkout_pypl_close_button_size" android:layout_height="@dimen/paypal_checkout_pypl_close_button_size" android:layout_margin="@dimen/paypal_checkout_margin_16x" android:src="@drawable/paypal_checkout_ic_close" android:scaleType="centerInside" android:contentDescription="@string/paypal_checkout_close" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/loadingHeaderView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/paypal_checkout_rounded_dialog_loading" app:layout_constraintBottom_toBottomOf="@id/backArrowImageView" app:layout_constraintTop_toTopOf="parent" />
+            <FrameLayout android:id="@id/contentFrameLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/backArrowImageView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

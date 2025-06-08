@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/bt_expiration_date_item_text_size" android:textStyle="bold" android:gravity="center" android:id="@android:id/text1" android:paddingLeft="@dimen/bt_margin" android:paddingRight="@dimen/bt_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingStart="@dimen/bt_margin" android:paddingEnd="@dimen/bt_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

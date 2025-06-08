@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/fab_margin" android:paddingBottom="@dimen/fab_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/fab_margin" android:layout_marginEnd="@dimen/fab_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/whiteListCheckboxHolder" android:paddingBottom="@dimen/fab_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textStyle="bold" android:textColor="@color/blue" android:id="@id/whyInfoLableTextview" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginBottom" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textColor="@color/colorBlack" android:id="@id/whyInfoDecTextview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginBottom" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textStyle="bold" android:textColor="@color/blue" android:id="@id/helpLabelTextView" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginBottom" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textColor="@color/colorBlack" android:id="@id/helpDecTextview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginBottom" />
+</LinearLayout>

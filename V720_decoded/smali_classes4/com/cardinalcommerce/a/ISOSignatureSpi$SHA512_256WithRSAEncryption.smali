@@ -1,0 +1,404 @@
+.class public final Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/cardinalcommerce/a/GMSignatureSpi$sha256WithSM2;
+
+
+# instance fields
+.field private Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+.field private init:Ljava/security/SecureRandom;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final cca_continue(ZLcom/cardinalcommerce/a/GMCipherSpi$SM2withRMD;)V
+    .locals 0
+
+    if-eqz p1, :cond_1
+
+    .line 0
+    instance-of p1, p2, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD128;
+
+    if-eqz p1, :cond_0
+
+    check-cast p2, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD128;
+
+    .line 1000
+    iget-object p1, p2, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD128;->Cardinal:Ljava/security/SecureRandom;
+
+    .line 0
+    iput-object p1, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->init:Ljava/security/SecureRandom;
+
+    .line 2000
+    iget-object p1, p2, Lcom/cardinalcommerce/a/DigestSignatureSpi$RIPEMD128;->cca_continue:Lcom/cardinalcommerce/a/GMCipherSpi$SM2withRMD;
+
+    .line 0
+    check-cast p1, Lcom/cardinalcommerce/a/GOSTUtil;
+
+    iput-object p1, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    return-void
+
+    :cond_0
+    invoke-static {}, Lcom/cardinalcommerce/a/GMCipherSpi$SM2withWhirlpool;->configure()Ljava/security/SecureRandom;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->init:Ljava/security/SecureRandom;
+
+    check-cast p2, Lcom/cardinalcommerce/a/GOSTUtil;
+
+    iput-object p2, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    return-void
+
+    :cond_1
+    check-cast p2, Lcom/cardinalcommerce/a/BCRSAPrivateKey;
+
+    iput-object p2, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    return-void
+.end method
+
+.method public final configure([BLjava/math/BigInteger;Ljava/math/BigInteger;)Z
+    .locals 5
+
+    .line 0
+    array-length v0, p1
+
+    new-array v1, v0, [B
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-eq v3, v0, :cond_0
+
+    add-int/lit8 v4, v0, -0x1
+
+    sub-int/2addr v4, v3
+
+    aget-byte v4, p1, v4
+
+    aput-byte v4, v1, v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/math/BigInteger;
+
+    const/4 v0, 0x1
+
+    invoke-direct {p1, v0, v1}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    iget-object v0, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    .line 13000
+    iget-object v0, v0, Lcom/cardinalcommerce/a/BCGOST3410PublicKey;->Cardinal:Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;
+
+    const-wide/16 v3, 0x0
+
+    .line 0
+    invoke-static {v3, v4}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p2}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v3
+
+    if-gez v3, :cond_3
+
+    .line 14000
+    iget-object v3, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v3, p2}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v3
+
+    if-gtz v3, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {v1, p3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v1
+
+    if-gez v1, :cond_3
+
+    .line 15000
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v1, p3}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v1
+
+    if-gtz v1, :cond_2
+
+    goto :goto_1
+
+    .line 16000
+    :cond_2
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    new-instance v2, Ljava/math/BigInteger;
+
+    const-string v3, "2"
+
+    invoke-direct {v2, v3}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    .line 17000
+    iget-object v2, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p1, v1, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p3, p1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p3
+
+    .line 18000
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p3, v1}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p3
+
+    .line 19000
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v1, p2}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    .line 20000
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    .line 21000
+    iget-object v1, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->Cardinal:Ljava/math/BigInteger;
+
+    .line 22000
+    iget-object v2, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->cca_continue:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v1, p3, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p3
+
+    iget-object v1, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    check-cast v1, Lcom/cardinalcommerce/a/BCRSAPrivateKey;
+
+    .line 23000
+    iget-object v1, v1, Lcom/cardinalcommerce/a/BCRSAPrivateKey;->getInstance:Ljava/math/BigInteger;
+
+    .line 24000
+    iget-object v2, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->cca_continue:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v1, p1, v2}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p3, p1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    .line 25000
+    iget-object p3, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->cca_continue:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p1, p3}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    .line 26000
+    iget-object p3, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p1, p3}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_3
+    :goto_1
+    return v2
+.end method
+
+.method public final init()Ljava/math/BigInteger;
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    .line 3000
+    iget-object v0, v0, Lcom/cardinalcommerce/a/BCGOST3410PublicKey;->Cardinal:Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;
+
+    .line 4000
+    iget-object v0, v0, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    return-object v0
+.end method
+
+.method public final init([B)[Ljava/math/BigInteger;
+    .locals 6
+
+    .line 0
+    array-length v0, p1
+
+    new-array v1, v0, [B
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-eq v3, v0, :cond_0
+
+    add-int/lit8 v4, v0, -0x1
+
+    sub-int/2addr v4, v3
+
+    aget-byte v4, p1, v4
+
+    aput-byte v4, v1, v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/math/BigInteger;
+
+    const/4 v0, 0x1
+
+    invoke-direct {p1, v0, v1}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    iget-object v1, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    .line 5000
+    iget-object v1, v1, Lcom/cardinalcommerce/a/BCGOST3410PublicKey;->Cardinal:Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;
+
+    .line 6000
+    :cond_1
+    iget-object v3, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v3
+
+    iget-object v4, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->init:Ljava/security/SecureRandom;
+
+    invoke-static {v3, v4}, Lcom/cardinalcommerce/a/setCornerRadius;->configure(ILjava/security/SecureRandom;)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    .line 7000
+    iget-object v4, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
+
+    move-result v4
+
+    if-gez v4, :cond_1
+
+    .line 8000
+    iget-object v4, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->Cardinal:Ljava/math/BigInteger;
+
+    .line 9000
+    iget-object v5, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->cca_continue:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v4, v3, v5}, Ljava/math/BigInteger;->modPow(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v4
+
+    .line 10000
+    iget-object v5, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v4, v5}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v4
+
+    invoke-virtual {v3, p1}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    iget-object v3, p0, Lcom/cardinalcommerce/a/ISOSignatureSpi$SHA512_256WithRSAEncryption;->Cardinal:Lcom/cardinalcommerce/a/BCGOST3410PublicKey;
+
+    check-cast v3, Lcom/cardinalcommerce/a/GOSTUtil;
+
+    .line 11000
+    iget-object v3, v3, Lcom/cardinalcommerce/a/GOSTUtil;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {v3, v4}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    .line 12000
+    iget-object v1, v1, Lcom/cardinalcommerce/a/CipherSpi$PKCS1v1_5Padding;->configure:Ljava/math/BigInteger;
+
+    .line 0
+    invoke-virtual {p1, v1}, Ljava/math/BigInteger;->mod(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/math/BigInteger;
+
+    aput-object v4, v1, v2
+
+    aput-object p1, v1, v0
+
+    return-object v1
+.end method

@@ -1,0 +1,137 @@
+.class public final Lcom/igexin/push/core/d/f$a;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/igexin/push/core/d/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field a:Lcom/getui/gtc/dyc/b/b$a;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance v0, Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-direct {v0}, Lcom/getui/gtc/dyc/b/b$a;-><init>()V
+
+    iput-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    return-void
+.end method
+
+.method private static synthetic a(Lcom/igexin/push/core/d/f$a;)Lcom/getui/gtc/dyc/b/b$a;
+    .locals 0
+
+    iget-object p0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(J)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1, p2}, Lcom/getui/gtc/dyc/b/b$a;->g(J)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final a(Lcom/igexin/push/core/d/g;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    iget-object p1, p1, Lcom/igexin/push/core/d/g;->b:Lcom/getui/gtc/dyc/b/c;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->h(Lcom/getui/gtc/dyc/b/c;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final a(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->a(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final a()Lcom/igexin/push/core/d/f;
+    .locals 2
+
+    new-instance v0, Lcom/igexin/push/core/d/f;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lcom/igexin/push/core/d/f;-><init>(Lcom/igexin/push/core/d/f$a;B)V
+
+    return-object v0
+.end method
+
+.method public final b(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->b(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final c(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->c(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final d(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->d(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final e(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->e(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method
+
+.method public final f(Ljava/lang/String;)Lcom/igexin/push/core/d/f$a;
+    .locals 1
+
+    iget-object v0, p0, Lcom/igexin/push/core/d/f$a;->a:Lcom/getui/gtc/dyc/b/b$a;
+
+    invoke-virtual {v0, p1}, Lcom/getui/gtc/dyc/b/b$a;->f(Ljava/lang/String;)Lcom/getui/gtc/dyc/b/b$a;
+
+    return-object p0
+.end method

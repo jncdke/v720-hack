@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="@dimen/progressbar_width" android:layout_height="@dimen/progressbar_height" android:animateLayoutChanges="true" android:alpha="@dimen/alpha"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fab_margin" android:layout_marginTop="@dimen/margin_30" android:layout_marginRight="@dimen/fab_margin" />
+    <com.cardinalcommerce.a.setY android:layout_gravity="bottom" android:id="@id/imageView" android:paddingBottom="@dimen/margin_40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/card_network" android:cropToPadding="true" android:contentDescription="@string/card_network" android:layout_marginStart="@dimen/activity_vertical_margin" android:layout_marginEnd="@dimen/activity_vertical_margin" />
+</FrameLayout>

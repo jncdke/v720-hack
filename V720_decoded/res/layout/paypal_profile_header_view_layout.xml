@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/payPalProfileHeaderContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/userProfileCircleLayout" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation" app:layout_anchor="@id/nested_scroll_view" app:layout_anchorGravity="top|center">
+        <TextView android:textColor="@color/paypal_checkout_white_color" android:gravity="center" android:id="@id/userProfileInitialCircleTextView" android:background="@drawable/paypal_checkout_rounded_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/paypal_checkout_margin_8x" android:layout_marginEnd="@dimen/paypal_checkout_margin_8x" style="@style/PYPLTextViewTitle1Style" />
+        <com.paypal.pyplcheckout.ui.feature.home.customviews.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/userProfileCircleImageView" android:layout_width="@dimen/paypal_checkout_circle_icon_width" android:layout_height="@dimen/paypal_checkout_circle_icon_height" />
+    </RelativeLayout>
+    <FrameLayout android:orientation="horizontal" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_header_margin_top">
+        <ImageView android:id="@id/userProfileBackArrowImageView" style="@style/PYPLBackButtonStyle" />
+    </FrameLayout>
+</FrameLayout>

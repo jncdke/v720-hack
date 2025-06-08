@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/paypal_checkout_touch_target_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/countryCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAlignBottom="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/paypal_checkout_ic_check" />
+    <TextView android:id="@id/valueTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/paypal_checkout_padding_8x" android:importantForAccessibility="@android:integer/config_longAnimTime" android:focusedByDefault="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLTextViewBody2Style" />
+</androidx.constraintlayout.widget.ConstraintLayout>

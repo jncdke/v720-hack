@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/payPal_shipping_method_header_container" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/paypal_checkout_white_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/shipping_method_back_arrow_img" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLBackButtonStyle" />
+    <TextView android:id="@id/addressBookTitleTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/paypal_checkout_choose_shipping_method" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/backButtonWidthOffsetSpace" app:layout_constraintStart_toEndOf="@id/shipping_method_back_arrow_img" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLTextViewTitle1Style" />
+    <Space android:id="@id/backButtonWidthOffsetSpace" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLHorizontalSpace.BackButtonOffset" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/fragmentBgdMaskLayout" android:background="@color/paypal_checkout_background_scrim_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/fragmentBottomSheetLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.paypal.pyplcheckout.ui.feature.home.customviews.AutoCloseBottomSheetBehavior">
+        <include layout="@layout/paypal_bottom_sheet_layout" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

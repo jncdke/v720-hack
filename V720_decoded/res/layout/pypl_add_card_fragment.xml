@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/paysheet_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/paysheet_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_anchorGravity="bottom" app:layout_behavior="com.paypal.pyplcheckout.ui.feature.home.customviews.AutoCloseBottomSheetBehavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/footer_container" android:background="@color/paypal_checkout_white_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <FrameLayout android:id="@id/content_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_container">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation" />
+            <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll_view" android:background="@drawable/paypal_checkout_rounded_dialog" android:scrollbars="vertical" android:fadingEdgeLength="@dimen/paypal_checkout_paysheet_fading_length" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:fadeScrollbars="true" android:requiresFadingEdge="vertical">
+                <LinearLayout android:orientation="vertical" android:id="@id/body_container" android:paddingTop="@dimen/paypal_checkout_padding_48x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="@color/paypal_checkout_white_color" />
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

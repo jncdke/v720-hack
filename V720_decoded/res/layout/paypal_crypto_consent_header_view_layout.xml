@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/payPal_crypto_terms_and_conditions_header_container" android:background="@drawable/paypal_checkout_rounded_dialog" android:padding="@dimen/paypal_checkout_padding_16x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:backgroundTint="@color/paypal_checkout_white_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

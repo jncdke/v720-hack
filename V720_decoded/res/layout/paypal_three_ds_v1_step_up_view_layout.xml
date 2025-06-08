@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/paypal_three_ds_info_view_container" android:background="@android:color/holo_green_light" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/three_ds_web_view" android:padding="@dimen/paypal_checkout_padding_16x" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+</RelativeLayout>

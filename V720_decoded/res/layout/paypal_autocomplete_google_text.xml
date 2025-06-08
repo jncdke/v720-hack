@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/paypal_checkout_padding_2x" android:paddingBottom="@dimen/paypal_checkout_padding_8x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/paypal_checkout_gray_color_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_checkout_powered_by_google" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/PYPLTextViewCaption1Style" />
+</androidx.constraintlayout.widget.ConstraintLayout>

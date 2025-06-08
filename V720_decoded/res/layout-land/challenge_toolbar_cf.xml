@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/toolbar" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="56.0dip" android:elevation="3.0dip" app:title="@string/secured_checkout" app:titleTextColor="@color/colorBlack"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/otpBodyText" android:textSize="@dimen/text_size_16" android:layout_gravity="end" android:id="@id/toolbarButton" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/marginTop" android:text="@string/cancel" android:textAllCaps="false" android:layout_alignParentEnd="true" />
+</androidx.appcompat.widget.Toolbar>

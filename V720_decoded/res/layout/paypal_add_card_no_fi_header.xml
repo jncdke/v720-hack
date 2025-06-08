@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_container" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/paypalLogoImageView" android:padding="@dimen/paypal_checkout_padding_14x" android:clickable="false" android:layout_width="@dimen/paypal_checkout_paypal_checkout_logo" android:layout_height="@dimen/paypal_checkout_paypal_checkout_logo" android:src="@drawable/paypal_checkout_ic_logo" android:contentDescription="@string/paypal_checkout_paypal_logo" android:elevation="@dimen/paypal_checkout_paypal_logo_elevation" />
+    <TextView android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/paypal_checkout_add_card_no_fi_full_header" android:layout_weight="0.33" style="@style/PYPLTextViewTitleStyle" />
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/closeImageView" android:background="@null" android:padding="@dimen/paypal_checkout_margin_10x" android:layout_width="@dimen/paypal_checkout_pypl_close_button_size" android:layout_height="@dimen/paypal_checkout_pypl_close_button_size" android:layout_margin="@dimen/paypal_checkout_margin_8x" android:src="@drawable/paypal_checkout_ic_close" android:scaleType="centerInside" android:contentDescription="@string/paypal_checkout_close" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="100.0dip" android:width="160.0dip" android:autoMirrored="true" android:viewportWidth="160.0" android:viewportHeight="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#fff3f3f3" android:pathData="M0,0h160v100h-160z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="@drawable/$paypal_checkout_ic_cb__0" android:pathData="M58.8,34.566l0,31.434l42.669,0.001l0,-31.434z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffefefe" android:pathData="M71.897,49.583L81.046,49.583C80.965,47.776 80.504,45.912 79.106,44.716C77.442,43.29 74.526,42.761 71.92,42.761C69.208,42.761 66.209,43.341 64.535,44.871C63.092,46.188 62.78,48.308 62.78,50.213C62.78,52.208 63.39,54.529 64.956,55.866C66.621,57.288 69.318,57.666 71.92,57.666C74.447,57.666 77.185,57.24 78.84,55.889C80.49,54.54 81.061,52.268 81.061,50.213L81.061,50.204L71.897,50.204L71.897,49.583Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffefefe" android:pathData="M81.661,50.204L81.661,57.333L94.389,57.333L94.389,57.323C96.251,57.23 97.733,55.696 97.733,53.812C97.733,51.927 96.251,50.294 94.389,50.201L94.389,50.204L81.661,50.204Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+    <path android:fillColor="#fffefefe" android:pathData="M97.5,46.315C97.5,44.499 96.059,43.06 94.244,43.06C94.118,43.06 93.964,43.036 93.842,43.049L81.66,43.049L81.66,49.583L94.493,49.583C96.176,49.438 97.5,48.034 97.5,46.315" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

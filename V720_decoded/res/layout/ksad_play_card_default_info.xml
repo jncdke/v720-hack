@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="278.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kwad.components.core.widget.KSCornerImageView android:id="@id/ksad_splash_default_icon" android:layout_width="53.0dip" android:layout_height="53.0dip" />
+    <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/ksad_splash_default_title" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_marginTop="11.0dip" android:maxWidth="278.0dip" android:singleLine="true" />
+    <ImageView android:id="@id/ksad_splash_default_img" android:layout_width="278.0dip" android:layout_height="264.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/ksad_splash_default_icon" />
+    <TextView android:textSize="19.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/ksad_splash_default_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxWidth="278.0dip" android:maxLines="2" android:lineHeight="28.0dip" />
+    <TextView android:textSize="8.0sp" android:textColor="#ffbdbdbd" android:ellipsize="end" android:gravity="center" android:id="@id/ksad_splash_default_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxWidth="278.0dip" android:text="*实际福利以活动详情为准" android:maxLines="1" />
+</LinearLayout>

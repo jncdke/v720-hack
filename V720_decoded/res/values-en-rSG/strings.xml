@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_code_message">We sent you a new code</string>
+    <string name="paypal_auth_common_header_back_press">back press</string>
+    <string name="paypal_auth_common_header_close">close</string>
+    <string name="paypal_auth_common_header_paypal_logo">PayPal logo</string>
+    <string name="paypal_auth_otp_login_back_press">back press</string>
+    <string name="paypal_auth_otp_login_check_code">Check your code and try again.</string>
+    <string name="paypal_auth_otp_login_close">close</string>
+    <string name="paypal_auth_otp_login_code_expired">Your code has expired. Get new code.</string>
+    <string name="paypal_auth_otp_login_code_sent_to">Code sent to %s</string>
+    <string name="paypal_auth_otp_login_error_use_password_instead">Use Password Instead</string>
+    <string name="paypal_auth_otp_login_get_a_code">Get a code</string>
+    <string name="paypal_auth_otp_login_get_new_code">Get new code</string>
+    <string name="paypal_auth_otp_login_log_in">Log In</string>
+    <string name="paypal_auth_otp_login_log_in_fast_with_a_one_time_code">Log in fast with a one-time code</string>
+    <string name="paypal_auth_otp_login_otp_phone_header">"Enter your 
+ one-time code"</string>
+    <string name="paypal_auth_otp_login_paypal_logo">PayPal logo</string>
+    <string name="paypal_auth_otp_login_paypal_logo_content_description">PayPal logo</string>
+    <string name="paypal_auth_otp_login_phone_text">phone</string>
+    <string name="paypal_auth_otp_login_something_went_wrong">Something went wrong</string>
+    <string name="paypal_auth_otp_login_tcpa_consent">By continuing, you confirm that you are authorised to use this phone number and agree to receive text messages. Mobile network fees may apply.</string>
+    <string name="paypal_auth_otp_login_try_again_later">You can try again later or log in with your password.</string>
+    <string name="paypal_auth_otp_login_use_password_instead">Use password instead</string>
+    <string name="paypal_auth_otp_login_we_ll_send_a_code_to">"We'll send a code to:"</string>
+    <string name="paypal_auth_otp_phone_login_screen_change">Change</string>
+    <string name="paypal_auth_split_login_email">Email</string>
+    <string name="paypal_auth_split_login_enter_an_email_address">Enter an email address.</string>
+    <string name="paypal_auth_split_login_enter_your_email_to_get_started">Enter your email to get started.</string>
+    <string name="paypal_auth_split_login_forgot_your_login_info">Forgot your login information?</string>
+    <string name="paypal_auth_split_login_next">Next</string>
+    <string name="paypal_auth_split_login_pay_with_paypal">Pay with PayPal</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+</resources>

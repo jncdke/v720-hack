@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/loading_spinner_parent_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.paypal.pyplcheckout.ui.feature.home.customviews.LoadingProgressSpinnerView android:layout_gravity="center" android:id="@id/loading_spinner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/paypal_checkout_margin_16x" android:layout_marginTop="@dimen/paypal_checkout_margin_48x" android:layout_marginRight="@dimen/paypal_checkout_margin_16x" android:layout_marginBottom="@dimen/paypal_checkout_margin_48x" android:layout_marginStart="@dimen/paypal_checkout_margin_16x" android:layout_marginEnd="@dimen/paypal_checkout_margin_16x" />
+</LinearLayout>

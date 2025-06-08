@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/transactionDetailsHeaderLayout" android:background="@drawable/paypal_checkout_rounded_dialog" android:layout_width="fill_parent" android:layout_height="@dimen/paypal_checkout_conversion_back_arrow_layout_height" android:backgroundTint="@color/paypal_checkout_white_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/transactionDetailsBackArrowImageView" android:layout_centerInParent="true" android:layout_alignParentStart="true" style="@style/PYPLBackButtonStyle" />
+    <TextView android:textSize="@dimen/text_size_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_checkout_transaction_details" android:layout_centerInParent="true" style="@style/PYPLTextViewTitleStyle" />
+</RelativeLayout>

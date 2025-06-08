@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="128.0dip" android:layout_height="128.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/ksad_feed_shake_bg" android:background="@drawable/ksad_feed_shake_bg" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/ksad_feed_shake_icon" android:visibility="invisible" android:layout_width="55.559998dip" android:layout_height="55.559998dip" android:src="@drawable/ksad_ic_shake_hand" />
+</FrameLayout>

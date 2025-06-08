@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-1.0dip" android:top="0.0dip" android:right="-1.0dip" android:bottom="-1.0dip">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/paypal_checkout_divider_height" android:color="@color/paypal_checkout_gray_color_300" android:dashWidth="@dimen/paypal_checkout_dash_width" android:dashGap="@dimen/paypal_checkout_dash_gap" />
+            <solid android:color="@android:color/transparent" />
+            <padding android:left="@dimen/paypal_checkout_padding_8x" android:top="@dimen/paypal_checkout_padding_8x" android:right="@dimen/paypal_checkout_padding_8x" android:bottom="@dimen/paypal_checkout_padding_8x" />
+        </shape>
+    </item>
+</layer-list>

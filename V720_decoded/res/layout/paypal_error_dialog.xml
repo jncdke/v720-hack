@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/paypal_checkout_padding_24x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/error_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/paypal_checkout_margin_4x" android:text="@string/paypal_checkout_error" style="@style/PYPLTextViewTitleStyle" />
+        <TextView android:id="@id/error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/paypal_checkout_margin_4x" style="@style/PYPLTextViewBody1Style" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/paypal_checkout_margin_8x">
+            <TextView android:textColor="@color/paypal_checkout_gray_color_500" android:gravity="center_vertical" android:id="@id/error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/paypal_checkout_ic_warning_grey_24dp" android:layout_alignParentLeft="true" android:drawableStart="@drawable/paypal_checkout_ic_warning_grey_24dp" android:textAlignment="gravity" android:layout_alignParentStart="true" android:drawableTint="@color/paypal_checkout_gray_color_501" style="@style/PYPLTextViewCaption1Style" />
+            <Button android:id="@id/ok_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_checkout_go_back_btn" android:layout_alignBaseline="@id/error_code" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/PYPLTextViewButtonStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

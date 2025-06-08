@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/textbody" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/text_info_body_view" />
+    <com.cardinalcommerce.a.setAnimationMatrix android:textAppearance="@style/challengeLabelText" android:textSize="@dimen/text_size_16" android:gravity="center" android:layout_gravity="center" android:id="@id/challengeInfoLabelTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/marginTop_20" android:layout_marginBottom="@dimen/marginTop" android:text="@string/ss_challengeinfo_lable" />
+    <com.cardinalcommerce.a.setTranslationZ android:id="@id/selectradiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" />
+    <com.cardinalcommerce.a.setBottom android:theme="@style/otpbody.verfyBtn" android:id="@id/ss_submitAuthenticationButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fab_margin" android:text="@string/next" android:textAllCaps="false" android:layout_marginStart="@dimen/fab_margin" android:layout_marginEnd="@dimen/fab_margin" />
+</LinearLayout>
